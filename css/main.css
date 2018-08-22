@@ -1530,16 +1530,6 @@ pre .javascript .function {
     display: inline-block;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .post-meta-item-text {
-    display: none;
-  }
-}
-@media (max-width: 767px) {
-  .post-meta-item-text {
-    display: none;
-  }
-}
 @media (max-width: 767px) {
   .posts-expand .post-comments-count {
     display: none;
@@ -1874,7 +1864,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2870ff;
+  background: #e8ff13;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2409,10 +2399,15 @@ pre .javascript .function {
 }
 .site-uv {
   margin-right: 10px;
+/*
+    &::after {
+      content: "|";
+      padding-left: 10px;
+    }
+    */
 }
-.site-uv::after {
-  content: "|";
-  padding-left: 10px;
+.theme-info {
+  display: inline-block;
 }
 .page-archive .archive-page-counter {
   position: relative;
