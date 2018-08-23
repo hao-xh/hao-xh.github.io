@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://hao-xh.github.io/"/>
+  <link href="https://www.jiabeih.cn/"/>
   <updated>2018-08-22T03:05:24.661Z</updated>
-  <id>https://hao-xh.github.io/</id>
+  <id>https://www.jiabeih.cn/</id>
   
   <author>
     <name>加贝H</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>GitHub+hexo折腾记</title>
-    <link href="https://hao-xh.github.io/2018/08/20/github+hexo%E6%8A%98%E8%85%BE%E8%AE%B0/"/>
-    <id>https://hao-xh.github.io/2018/08/20/github+hexo折腾记/</id>
+    <link href="https://www.jiabeih.cn/2018/08/20/github+hexo%E6%8A%98%E8%85%BE%E8%AE%B0/"/>
+    <id>https://www.jiabeih.cn/2018/08/20/github+hexo折腾记/</id>
     <published>2018-08-20T08:44:09.212Z</published>
     <updated>2018-08-22T03:05:24.661Z</updated>
     
@@ -32,14 +32,14 @@
     </summary>
     
     
-      <category term="瞎折腾" scheme="https://hao-xh.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+      <category term="瞎折腾" scheme="https://www.jiabeih.cn/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://hao-xh.github.io/2018/08/20/hello-world/"/>
-    <id>https://hao-xh.github.io/2018/08/20/hello-world/</id>
+    <link href="https://www.jiabeih.cn/2018/08/20/hello-world/"/>
+    <id>https://www.jiabeih.cn/2018/08/20/hello-world/</id>
     <published>2018-08-20T05:50:22.135Z</published>
     <updated>2018-08-22T03:22:36.603Z</updated>
     
@@ -52,7 +52,7 @@
     </summary>
     
     
-      <category term="教程" scheme="https://hao-xh.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="https://www.jiabeih.cn/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
