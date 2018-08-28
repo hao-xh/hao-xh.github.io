@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.jiabeih.cn/"/>
-  <updated>2018-08-22T03:05:24.661Z</updated>
+  <updated>2018-08-27T05:28:05.287Z</updated>
   <id>https://www.jiabeih.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端开发工具VSCode常用插件</title>
+    <link href="https://www.jiabeih.cn/2018/08/27/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7VSCode%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
+    <id>https://www.jiabeih.cn/2018/08/27/前端开发工具VSCode常用插件/</id>
+    <published>2018-08-27T02:31:24.901Z</published>
+    <updated>2018-08-27T05:28:05.287Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>VSCode是个开源的跨平台编辑器。快速，可扩展，可定制并具有大量功能使其很受开发者喜爱。</p><p>在此记录常用的Web开发插件免得忘记</p><a id="more"></a><h2 id="Quokka-js"><a href="#Quokka-js" class="headerlink" title="Quokka.js"></a>Quokka.js</h2><p><a href="https://quokkajs.com/" target="_blank" rel="noopener">Quokka.js</a> 是一个用于 JavaScript 和 TypeScript 的实时运行代码平台。 这意味着它会在你输入后立即运行您的代码，并在您的代码编辑器中显示各种执行结果。</p><p>安装此扩展后，可以按 <strong>Ctrl/Cmd(⌘) + Shift + P </strong>显示编辑器的命令选项面板，然后键入 Quokka 以查看可用命令的列表。 选择并运行 “新建JavaScript文件” 命令。 您也可以按<strong>（⌘ + K + J）</strong>直接打开文件。 您在此文件中键入的任何内容都会立即执行。</p><p><img src="http://pe3n7jv6x.bkt.clouddn.com/Quokka.gif" alt="Quokka" title="Quokka.js(图片出于官网示例)"></p><h2 id="REST-Client"><a href="#REST-Client" class="headerlink" title="REST Client"></a>REST Client</h2><p>作为Web开发人员，我们经常需要使用 REST API。为了检查URL并检查响应，使用 <a href="https://www.getpostman.com/apps" target="_blank" rel="noopener">Postman</a> 等工具。但是，当编辑器可以轻松完成相同的任务时，为什么还要使用不同的应用程序呢。欢迎使用 <a href="https://marketplace.visualstudio.com/items?itemName=humao.rest-client" target="_blank" rel="noopener">REST Client</a>。它允许您在Visual Studio Code中直接发送 HTTP 请求并查看响应。</p><p><img src="http://pe3n7jv6x.bkt.clouddn.com/REST%20Client.gif" alt="REST Client" title="REST Client(图片出于官方示例)"></p><h2 id="indenticator"><a href="#indenticator" class="headerlink" title="indenticator"></a>indenticator</h2><p><a href="https://marketplace.visualstudio.com/items?itemName=SirTori.indenticator" target="_blank" rel="noopener">Indenticator(缩进指示器)</a> 在视觉上突出显示当前的缩进深度。因此，现在您可以轻松区分在不同层次缩进的各种代码块。</p><p><img src="http://pe3n7jv6x.bkt.clouddn.com/indenticator.gif" alt="indenticator" title="indenticator(图片出于官网示例)"></p><h2 id="VSCode-Icons"><a href="#VSCode-Icons" class="headerlink" title="VSCode Icons"></a>VSCode Icons</h2><p>增加与文件格式对应的图标，使文件类型一目了然！</p><p><img src="http://pe3n7jv6x.bkt.clouddn.com/vscode-icons.gif" alt="VSCode Icons" title="VSCode Icons(图片出于官网示例)"></p><h2 id="Dracula-主题"><a href="#Dracula-主题" class="headerlink" title="Dracula(主题)"></a>Dracula(主题)</h2><p><a href="https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula" target="_blank" rel="noopener">Dracula</a>挺好看的一个主题。</p><p><img src="http://pe3n7jv6x.bkt.clouddn.com/dracula.png" alt="Dracula"></p><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>暂只列举了一部分插件，后面有看到实用的插件继续记录！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;VSCode是个开源的跨平台编辑器。快速，可扩展，可定制并具有大量功能使其很受开发者喜爱。&lt;/p&gt;
+&lt;p&gt;在此记录常用的Web开发插件免得忘记&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="工具" scheme="https://www.jiabeih.cn/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>GitHub+hexo折腾记</title>
