@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.jiabeih.cn/"/>
-  <updated>2018-08-29T09:09:37.472Z</updated>
+  <updated>2018-08-29T09:51:59.622Z</updated>
   <id>https://www.jiabeih.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.jiabeih.cn/2018/08/29/%E5%85%B3%E4%BA%8E%E5%9C%A8H5%E6%89%93%E5%BC%80APP/"/>
     <id>https://www.jiabeih.cn/2018/08/29/关于在H5打开APP/</id>
     <published>2018-08-29T07:12:29.766Z</published>
-    <updated>2018-08-29T09:09:37.472Z</updated>
+    <updated>2018-08-29T09:51:59.622Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>公司要做在H5内打开本公司的APP产品，摸爬滚打一天后找到了一些思路。<strong>此处不写任何解决方案</strong>，只贴出解决的文章，以此记录。</p><a id="more"></a><h2 id="难点"><a href="#难点" class="headerlink" title="难点"></a>难点</h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>找了很多文章，至到看到下面这三个文章才搞清楚。</p><p>IOS下解决方法：</p><p><a href="http://www.cocoachina.com/ios/20170904/20463.html" target="_blank" rel="noopener">Universal Link 前端部署采坑记</a></p><p><a href="https://www.jianshu.com/p/03e6b7828307" target="_blank" rel="noopener">iOS的UniversalLink开发总结</a></p><p><a href="https://blog.csdn.net/long458/article/details/78950174" target="_blank" rel="noopener">UniversalLink通用链接</a></p><p><a href="https://www.jianshu.com/p/bc2f7b2f4377" target="_blank" rel="noopener">从微信/H5中调起iOS应用</a>(这是一个总结了几个方法的文章)</p>]]></content>
     
@@ -32,7 +32,9 @@
     </summary>
     
     
-      <category term="H5,交互" scheme="https://www.jiabeih.cn/tags/H5-%E4%BA%A4%E4%BA%92/"/>
+      <category term="H5" scheme="https://www.jiabeih.cn/tags/H5/"/>
+    
+      <category term="交互" scheme="https://www.jiabeih.cn/tags/%E4%BA%A4%E4%BA%92/"/>
     
   </entry>
   
