@@ -82,27 +82,22 @@
   </entry>
   
   <entry>
-    <title></title>
+    <title>MarkDown语法格式</title>
     <link href="https://www.jiabeih.cn/2018/08/16/%E6%A0%BC%E5%BC%8F/"/>
     <id>https://www.jiabeih.cn/2018/08/16/格式/</id>
     <published>2018-08-16T07:58:00.477Z</published>
-    <updated>2018-08-28T02:24:04.219Z</updated>
+    <updated>2018-08-30T02:52:31.361Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="解码"><a href="#解码" class="headerlink" title="解码"></a>解码</h2><p><del>删除线</del></p><hr><hr><hr><p><a href="www.baidu.com">百度地址</a></p><p><img src="https://www.baidu.com/img/bdlogo.png" alt="baidu"></p><p>| 列 | 列 | 列 |  //表头<br>| :— | :—: | —: | //左对齐  居中对齐 右对齐<br>| aaa | bbb | ccc |</p><table><thead><tr><th style="text-align:left">列</th><th style="text-align:center">列</th><th style="text-align:right">列</th></tr></thead><tbody><tr><td style="text-align:left">aaaaaaaaaaaa</td><td style="text-align:center">bbbbbbbbbbb</td><td style="text-align:right">cccccccccc</td></tr></tbody></table><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="解码"><a href="#解码" class="headerlink" title="解码"></a>解码</h2><a id="more"></a><p>删除线~~</p><hr><hr><hr><p><a href="www.baidu.com">百度地址</a></p><p><img src="https://www.baidu.com/img/bdlogo.png" alt="baidu"></p><p>| 列 | 列 | 列 |  //表头<br>| :— | :—: | —: | //左对齐  居中对齐 右对齐<br>| aaa | bbb | ccc |</p><table><thead><tr><th style="text-align:left">列</th><th style="text-align:center">列</th><th style="text-align:right">列</th></tr></thead><tbody><tr><td style="text-align:left">aaaaaaaaaaaa</td><td style="text-align:center">bbbbbbbbbbb</td><td style="text-align:right">cccccccccc</td></tr></tbody></table><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;解码&quot;&gt;&lt;a href=&quot;#解码&quot; class=&quot;headerlink&quot; title=&quot;解码&quot;&gt;&lt;/a&gt;解码&lt;/h2&gt;&lt;p&gt;&lt;del&gt;删除线&lt;/del&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;a href=&quot;www.baidu.com&quot;&gt;百度地址&lt;/a&gt;&lt;
-      
+      &lt;h2 id=&quot;解码&quot;&gt;&lt;a href=&quot;#解码&quot; class=&quot;headerlink&quot; title=&quot;解码&quot;&gt;&lt;/a&gt;解码&lt;/h2&gt;
     
     </summary>
     
+    
+      <category term="MarkDown" scheme="https://www.jiabeih.cn/tags/MarkDown/"/>
     
   </entry>
   
