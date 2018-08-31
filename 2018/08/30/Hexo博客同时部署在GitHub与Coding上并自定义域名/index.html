@@ -108,18 +108,25 @@
 
 
 
-<meta name="description" content="前言本文记录如果将Hexo博客同时部署在GitHub和Coding上。 Coding是什么？我自己的理解：Coding就像是国内的GitHub，托管博客在国内访问比GitHub速度快。我们配置绑定域名时可以让国内访问Coding，其余的访问GitHub。">
+<meta name="description" content="前言本文记录如何将Hexo博客同时部署在GitHub和Coding上。 Coding是什么？我自己的理解：Coding就像是国内的GitHub，托管博客在国内访问比GitHub速度快。我们配置绑定域名时可以让国内访问Coding，其余的访问GitHub。 双项绑定域名，即在海外访问域名时访问的是GitHub，国内访问时访问的是Coding。">
 <meta name="keywords" content="瞎折腾">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo博客同时部署在GitHub与Coding上并自定义域名">
+<meta property="og:title" content="Hexo博客同时部署在GitHub与Coding上并双线绑定域名">
 <meta property="og:url" content="https://www.jiabeih.cn/2018/08/30/Hexo博客同时部署在GitHub与Coding上并自定义域名/index.html">
 <meta property="og:site_name" content="进步中的加贝H">
-<meta property="og:description" content="前言本文记录如果将Hexo博客同时部署在GitHub和Coding上。 Coding是什么？我自己的理解：Coding就像是国内的GitHub，托管博客在国内访问比GitHub速度快。我们配置绑定域名时可以让国内访问Coding，其余的访问GitHub。">
+<meta property="og:description" content="前言本文记录如何将Hexo博客同时部署在GitHub和Coding上。 Coding是什么？我自己的理解：Coding就像是国内的GitHub，托管博客在国内访问比GitHub速度快。我们配置绑定域名时可以让国内访问Coding，其余的访问GitHub。 双项绑定域名，即在海外访问域名时访问的是GitHub，国内访问时访问的是Coding。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-30T07:59:23.452Z">
+<meta property="og:image" content="http://pe3n7jv6x.bkt.clouddn.com/addSSHSuccess.png">
+<meta property="og:image" content="http://pe3n7jv6x.bkt.clouddn.com/seeBlogPage.jpg">
+<meta property="og:image" content="http://pe3n7jv6x.bkt.clouddn.com/pageurl0.png">
+<meta property="og:image" content="http://pe3n7jv6x.bkt.clouddn.com/pageurl1.jpg">
+<meta property="og:image" content="http://pe3n7jv6x.bkt.clouddn.com/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D1.png">
+<meta property="og:image" content="http://pe3n7jv6x.bkt.clouddn.com/pageurl2.png">
+<meta property="og:updated_time" content="2018-08-31T09:08:42.956Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo博客同时部署在GitHub与Coding上并自定义域名">
-<meta name="twitter:description" content="前言本文记录如果将Hexo博客同时部署在GitHub和Coding上。 Coding是什么？我自己的理解：Coding就像是国内的GitHub，托管博客在国内访问比GitHub速度快。我们配置绑定域名时可以让国内访问Coding，其余的访问GitHub。">
+<meta name="twitter:title" content="Hexo博客同时部署在GitHub与Coding上并双线绑定域名">
+<meta name="twitter:description" content="前言本文记录如何将Hexo博客同时部署在GitHub和Coding上。 Coding是什么？我自己的理解：Coding就像是国内的GitHub，托管博客在国内访问比GitHub速度快。我们配置绑定域名时可以让国内访问Coding，其余的访问GitHub。 双项绑定域名，即在海外访问域名时访问的是GitHub，国内访问时访问的是Coding。">
+<meta name="twitter:image" content="http://pe3n7jv6x.bkt.clouddn.com/addSSHSuccess.png">
 
 
 
@@ -155,7 +162,7 @@
 
 
 
-  <title>Hexo博客同时部署在GitHub与Coding上并自定义域名 | 进步中的加贝H</title>
+  <title>Hexo博客同时部署在GitHub与Coding上并双线绑定域名 | 进步中的加贝H</title>
   
 
 
@@ -319,7 +326,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo博客同时部署在GitHub与Coding上并自定义域名</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo博客同时部署在GitHub与Coding上并双线绑定域名</h1>
         
 
         <div class="post-meta">
@@ -347,8 +354,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-08-30T15:59:23+08:00">
-                2018-08-30
+              <time title="更新于" itemprop="dateModified" datetime="2018-08-31T17:08:42+08:00">
+                2018-08-31
               </time>
             
           </span>
@@ -380,7 +387,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  199
+                  1,063
                 </span>
               
 
@@ -396,7 +403,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  4
                 </span>
               
             </div>
@@ -417,15 +424,45 @@
       
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文记录如果将Hexo博客同时部署在GitHub和Coding上。</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文记录如何将Hexo博客同时部署在GitHub和Coding上。</p>
 <p><a href="https://coding.net/" target="_blank" rel="noopener">Coding</a>是什么？我自己的理解：Coding就像是国内的GitHub，托管博客在国内访问比GitHub速度快。我们配置绑定域名时可以让国内访问Coding，其余的访问GitHub。</p>
+<p>双项绑定域名，即在海外访问域名时访问的是GitHub，国内访问时访问的是Coding。</p>
 <a id="more"></a>
 <h1 id="Coding上新建项目并配置"><a href="#Coding上新建项目并配置" class="headerlink" title="Coding上新建项目并配置"></a>Coding上新建项目并配置</h1><p>首先注册Coding，注册后绑定腾讯云就可以升级成为银会员(银会员才可以绑定域名)。</p>
+<h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><p>名称填写自己的Coding用户名，勾选<strong>启用 README.md 文件初始化项目</strong>进行创建（我也不知道为什么要勾选，看别人是这么说的，以后明白了再回来修改）。</p>
+<h2 id="部署公钥"><a href="#部署公钥" class="headerlink" title="部署公钥"></a>部署公钥</h2><p>依次进入<strong>设置-&gt;部署公钥-&gt;新建部署公钥</strong>，公钥内容粘贴id_rsa.pub内的内容(生成方法在我的上一篇文章<a href="https://jiabeih.cn/2018/08/20/github+hexo%E6%8A%98%E8%85%BE%E8%AE%B0/#more" target="_blank" rel="noopener">GitHub+hexo折腾记</a>第6节中查看)。</p>
+<p>部署成功后验证是否添加成功了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ssh -T git@git.coding.net</span><br></pre></td></tr></table></figure>
+<p>成功后会返回下图：</p>
+<p><img src="http://pe3n7jv6x.bkt.clouddn.com/addSSHSuccess.png" alt="SSH部署"></p>
+<h2 id="将博客部署到Coding"><a href="#将博客部署到Coding" class="headerlink" title="将博客部署到Coding"></a>将博客部署到Coding</h2><p>在bolg根目录的_config.yml配置文件下加一个Coding的git地址：搜索<strong>deploy:</strong>，增加一行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">coding: // 此处填写你自己的git地址</span><br></pre></td></tr></table></figure>
+<p>我的配置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: </span><br><span class="line">    github: # github地址</span><br><span class="line">    coding:  # coding地址</span><br><span class="line">  branch: master</span><br><span class="line">message: &apos;站点更新: &#123;&#123; now(&quot;YYYY-MM-DD HH:mm:ss&quot;) &#125;&#125;&apos;</span><br></pre></td></tr></table></figure>
+<p>然后执行命令行将博客更新到Coding以及GitHub</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d</span><br></pre></td></tr></table></figure>
+<h2 id="浏览"><a href="#浏览" class="headerlink" title="浏览"></a>浏览</h2><p>至此，现在已经可以通过Coding给出的地址(下图)来访问我们的博客页面了<img src="http://pe3n7jv6x.bkt.clouddn.com/seeBlogPage.jpg" alt=""></p>
+<h1 id="双线绑定域名"><a href="#双线绑定域名" class="headerlink" title="双线绑定域名"></a>双线绑定域名</h1><p>如果在此之前已经将自定义域名绑定到了GitHub上，请先将域名解析处的GitHub地址先删除掉，因为这会影响双线绑定的成功。这里我们以腾讯云申请的域名为例。</p>
 <ul>
-<li>创建项目，名称填写自己的Coding用户名，勾选<strong>启用 README.md 文件初始化项目</strong>进行创建。</li>
-<li>部署公钥，依次进入<strong>设置-&gt;部署公钥-&gt;新建部署公钥</strong>，公钥内容粘贴id_rsa.pub内的内容(生成方法在我的上一篇文章<a href="">GitHub+hexo折腾记</a>中查看)。</li>
-<li></li>
+<li><p>首先在腾讯云域名解析内添加解析，Coding自定义域名那里有详细的解释。<img src="http://pe3n7jv6x.bkt.clouddn.com/pageurl0.png" alt="添加解析"></p>
+<p>将红圈内的链接填入记录值内，此处将线路类型设置成<strong>默认</strong>。<img src="http://pe3n7jv6x.bkt.clouddn.com/pageurl1.jpg" alt="添加解析"></p>
+</li>
+<li><p>然后在Coding自定义域名下绑定新域名。</p>
+</li>
+<li><p>注意：此处一定要先添加Coding的解析，若已经添加了GitHub的解析请先删除，否则SSL证书审核就会出现问题，Coding有个奇怪的规则是必须海外和国内同时能访问到页面时才能审核成功，否则会一直失败。<img src="http://pe3n7jv6x.bkt.clouddn.com/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D1.png" alt="Coding自定义域名"></p>
+</li>
+<li><p>过一会儿如果访问正常了，那么再去将GitHub的解析添加进去，方法差不多，记录值为你的库名(***.github.io)，此处的线路类型一定要设置成<strong>海外</strong>(图片参考上面上面红框外的两条数据)。</p>
+</li>
+<li><p>之后在GitHub上绑定自定义域名，打开<strong>库-&gt;settings，下拉找到GitHub Pages，在Custom domain处添加域名，然后点击Save</strong>。<img src="http://pe3n7jv6x.bkt.clouddn.com/pageurl2.png" alt="GitHub绑定域名"></p>
+</li>
+<li><p>至此，我们绑定域名的操作已经完成了，打开蓝灯访问域名访问到的就是GitHub。博客访问速度明显加快啦~</p>
+</li>
 </ul>
+<h1 id="Coding中转页"><a href="#Coding中转页" class="headerlink" title="Coding中转页"></a>Coding中转页</h1><p>访问博客时会有一个5s钟的中转页，这个页面是因为使用Coding托管了我们的博客造成的。设置中给出了解决办法，就是在首页的任意地方添加上它们的代码(毕竟不会让你白用。。)，如果使用Next主题的话，在<strong>/themes/next/layout/_partials/share/footer.swig</strong>下最后添加一行代码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hosted by <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://pages.coding.me"</span> <span class="attr">style</span>=<span class="string">"font-weight: bold"</span>&gt;</span>Coding Pages<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>因为我是先给GitHub绑定的域名，所以导致Coding的SSL证书一直审核失败，Chrome访问博客时会提示网站不安全不让进，域名解析又要10分钟才能生效导致测试很不方便，整整研究了多半天才找到是因为先绑定了GitHub的原因（具体原因可能是海外访问时已经被指定到了GitHub的托管下，访问不到Coding才会这样），写下来做一笔记，免得再踩坑！</p>
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://coding.net/help/doc/pages/creating-pages.html" target="_blank" rel="noopener">Coding帮助文档</a></p>
+<p><a href="https://blog.csdn.net/huhehaotechangsha/article/details/81288143" target="_blank" rel="noopener">用GitHub和Coding双线绑定自定义域名</a></p>
 
       
       <div>
@@ -450,11 +487,11 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/08/30/Hexo博客同时部署在GitHub与Coding上并自定义域名/">Hexo博客同时部署在GitHub与Coding上并自定义域名</a></p>
+  <p><span>本文标题:</span><a href="/2018/08/30/Hexo博客同时部署在GitHub与Coding上并自定义域名/">Hexo博客同时部署在GitHub与Coding上并双线绑定域名</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 加贝H 的个人博客">加贝H</a></p>
   <!-- <p><span>发布时间:</span>2018年08月30日 - 15:08</p>
-  <p><span>最后更新:</span>2018年08月30日 - 15:08</p> -->
-  <p><span>原始链接:</span><a href="/2018/08/30/Hexo博客同时部署在GitHub与Coding上并自定义域名/" title="Hexo博客同时部署在GitHub与Coding上并自定义域名">https://www.jiabeih.cn/2018/08/30/Hexo博客同时部署在GitHub与Coding上并自定义域名/</a>
+  <p><span>最后更新:</span>2018年08月31日 - 17:08</p> -->
+  <p><span>原始链接:</span><a href="/2018/08/30/Hexo博客同时部署在GitHub与Coding上并自定义域名/" title="Hexo博客同时部署在GitHub与Coding上并双线绑定域名">https://www.jiabeih.cn/2018/08/30/Hexo博客同时部署在GitHub与Coding上并自定义域名/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://www.jiabeih.cn/2018/08/30/Hexo博客同时部署在GitHub与Coding上并自定义域名/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
@@ -661,7 +698,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Coding上新建项目并配置"><span class="nav-number">2.</span> <span class="nav-text">Coding上新建项目并配置</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Coding上新建项目并配置"><span class="nav-number">2.</span> <span class="nav-text">Coding上新建项目并配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建项目"><span class="nav-number">2.1.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署公钥"><span class="nav-number">2.2.</span> <span class="nav-text">部署公钥</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将博客部署到Coding"><span class="nav-number">2.3.</span> <span class="nav-text">将博客部署到Coding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览"><span class="nav-number">2.4.</span> <span class="nav-text">浏览</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#双线绑定域名"><span class="nav-number">3.</span> <span class="nav-text">双线绑定域名</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Coding中转页"><span class="nav-number">4.</span> <span class="nav-text">Coding中转页</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结语"><span class="nav-number">5.</span> <span class="nav-text">结语</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文章"><span class="nav-number">6.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
             
 
           </div>
@@ -703,7 +740,7 @@
  -->
 
 
-<p style="margin: 0;">Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+<p style="margin: 0;">Hosted by <a href="https://pages.coding.me" style="font-weight: bold" target="_blank">Coding Pages</a></p>
         
 <div class="busuanzi-count">
   <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -733,7 +770,7 @@
       
         <span class="post-meta-item-text">博客全站共&#58;</span>
       
-      <span title="博客全站共">6.9k字</span>
+      <span title="博客全站共">7.8k字</span>
     </span>
   
 
