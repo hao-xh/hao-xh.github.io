@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.jiabeih.cn/"/>
-  <updated>2018-08-29T09:51:59.622Z</updated>
+  <updated>2018-08-30T07:59:23.452Z</updated>
   <id>https://www.jiabeih.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo博客同时部署在GitHub与Coding上并自定义域名</title>
+    <link href="https://www.jiabeih.cn/2018/08/30/Hexo%E5%8D%9A%E5%AE%A2%E5%90%8C%E6%97%B6%E9%83%A8%E7%BD%B2%E5%9C%A8GitHub%E4%B8%8ECoding%E4%B8%8A%E5%B9%B6%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/"/>
+    <id>https://www.jiabeih.cn/2018/08/30/Hexo博客同时部署在GitHub与Coding上并自定义域名/</id>
+    <published>2018-08-30T07:06:22.000Z</published>
+    <updated>2018-08-30T07:59:23.452Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文记录如果将Hexo博客同时部署在GitHub和Coding上。</p><p><a href="https://coding.net/" target="_blank" rel="noopener">Coding</a>是什么？我自己的理解：Coding就像是国内的GitHub，托管博客在国内访问比GitHub速度快。我们配置绑定域名时可以让国内访问Coding，其余的访问GitHub。</p><a id="more"></a><h1 id="Coding上新建项目并配置"><a href="#Coding上新建项目并配置" class="headerlink" title="Coding上新建项目并配置"></a>Coding上新建项目并配置</h1><p>首先注册Coding，注册后绑定腾讯云就可以升级成为银会员(银会员才可以绑定域名)。</p><ul><li>创建项目，名称填写自己的Coding用户名，勾选<strong>启用 README.md 文件初始化项目</strong>进行创建。</li><li>部署公钥，依次进入<strong>设置-&gt;部署公钥-&gt;新建部署公钥</strong>，公钥内容粘贴id_rsa.pub内的内容(生成方法在我的上一篇文章<a href="">GitHub+hexo折腾记</a>中查看)。</li><li></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;本文记录如果将Hexo博客同时部署在GitHub和Coding上。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://coding.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Coding&lt;/a&gt;是什么？我自己的理解：Coding就像是国内的GitHub，托管博客在国内访问比GitHub速度快。我们配置绑定域名时可以让国内访问Coding，其余的访问GitHub。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="瞎折腾" scheme="https://www.jiabeih.cn/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>在H5内打开APP踩坑记</title>
