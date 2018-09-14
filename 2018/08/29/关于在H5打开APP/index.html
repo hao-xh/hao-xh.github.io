@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="进步中的加贝H">
 <meta property="og:description" content="前言公司要做在H5内打开本公司的APP产品，摸爬滚打一天后找到了一些思路。此处不写任何解决方案，只贴出解决的文章，以此记录。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-31T09:20:44.550Z">
+<meta property="og:updated_time" content="2018-09-13T09:44:17.778Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在H5内打开APP踩坑记">
 <meta name="twitter:description" content="前言公司要做在H5内打开本公司的APP产品，摸爬滚打一天后找到了一些思路。此处不写任何解决方案，只贴出解决的文章，以此记录。">
@@ -357,8 +357,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-08-31T17:20:44+08:00">
-                2018-08-31
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-13T17:44:17+08:00">
+                2018-09-13
               </time>
             
           </span>
@@ -412,7 +412,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  127
+                  466
                 </span>
               
 
@@ -428,7 +428,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -451,12 +451,28 @@
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>公司要做在H5内打开本公司的APP产品，摸爬滚打一天后找到了一些思路。<strong>此处不写任何解决方案</strong>，只贴出解决的文章，以此记录。</p>
 <a id="more"></a>
-<h2 id="难点"><a href="#难点" class="headerlink" title="难点"></a>难点</h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>找了很多文章，至到看到下面这三个文章才搞清楚。</p>
+<h2 id="难点"><a href="#难点" class="headerlink" title="难点"></a>难点</h2><p>机型判断、是否是微信判断(因为微信内无法唤起APP，我是用了引导用户至浏览器内唤起APP的)。</p>
+<p>微信内不支持直接唤醒APP，需要用浏览器打开页面才可以唤醒，可以做一个引导页去实现。如果不想这么麻烦，可以使用下面的方法。</p>
+<h3 id="Universal-Link"><a href="#Universal-Link" class="headerlink" title="Universal Link"></a>Universal Link</h3><p>Schema 的弊端能通过Universal Link解决。</p>
+<p>在没装App的时候，Universal Link是一个合法的url链接，浏览器可以正常跳转，因此不会出现在iOS上讨人厌的框。</p>
+<p>Universal Link目前还没有基于iOS的UI/WKWebView的应用进行拦截，所以目前看还是能突破微信/手百的封锁。（以后，不好说啊~）</p>
+<h3 id="配置apple-app-association文件"><a href="#配置apple-app-association文件" class="headerlink" title="配置apple-app-association文件"></a>配置apple-app-association文件</h3><p>究竟哪些的url会被识别为Universal Link，全看这个apple-app-association文件</p>
+<ul>
+<li>你的域名必须支持Https</li>
+<li>域名根目录下放这个文件apple-app-association，不带任何后缀</li>
+<li>文件为json保存为文本即可</li>
+<li>json按着官网要求填写即可</li>
+</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>找了很多文章，至到看到下面这三个文章才搞清楚。</p>
 <p>IOS下解决方法：</p>
 <p><a href="http://www.cocoachina.com/ios/20170904/20463.html" target="_blank" rel="noopener">Universal Link 前端部署采坑记</a></p>
 <p><a href="https://www.jianshu.com/p/03e6b7828307" target="_blank" rel="noopener">iOS的UniversalLink开发总结</a></p>
 <p><a href="https://blog.csdn.net/long458/article/details/78950174" target="_blank" rel="noopener">UniversalLink通用链接</a></p>
 <p><a href="https://www.jianshu.com/p/bc2f7b2f4377" target="_blank" rel="noopener">从微信/H5中调起iOS应用</a>(这是一个总结了几个方法的文章)</p>
+<p>Android下解决方法：</p>
+<p><a href="https://www.jianshu.com/p/0180e3ee8108" target="_blank" rel="noopener">通过JS页面唤醒app</a></p>
+<p><a href="http://www.zhangyunling.com/559.html" target="_blank" rel="noopener">支持IOS9+和Android5+，JS打开APP的解决方案</a></p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>android下个别低版本系统浏览器会直接访问schema(像打开url链接似的去访问)，然后返回404页面未找到，不过已被我无视了。</p>
 
       
       <div>
@@ -484,7 +500,7 @@
   <p><span>本文标题:</span><a href="/2018/08/29/关于在H5打开APP/">在H5内打开APP踩坑记</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 加贝H 的个人博客">加贝H</a></p>
   <!-- <p><span>发布时间:</span>2018年08月29日 - 15:08</p>
-  <p><span>最后更新:</span>2018年08月31日 - 17:08</p> -->
+  <p><span>最后更新:</span>2018年09月13日 - 17:09</p> -->
   <p><span>原始链接:</span><a href="/2018/08/29/关于在H5打开APP/" title="在H5内打开APP踩坑记">https://www.jiabeih.cn/2018/08/29/关于在H5打开APP/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://www.jiabeih.cn/2018/08/29/关于在H5打开APP/"  aria-label="复制成功！"></i></span>
   </p>
@@ -629,7 +645,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -640,7 +656,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -651,7 +667,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -707,7 +723,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#难点"><span class="nav-number">2.</span> <span class="nav-text">难点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#难点"><span class="nav-number">2.</span> <span class="nav-text">难点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Universal-Link"><span class="nav-number">2.1.</span> <span class="nav-text">Universal Link</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置apple-app-association文件"><span class="nav-number">2.2.</span> <span class="nav-text">配置apple-app-association文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结语"><span class="nav-number">4.</span> <span class="nav-text">结语</span></a></li></ol></div>
             
 
           </div>
@@ -779,7 +795,7 @@
       
         <span class="post-meta-item-text">博客全站共&#58;</span>
       
-      <span title="博客全站共">8.5k字</span>
+      <span title="博客全站共">9.7k字</span>
     </span>
   
 
