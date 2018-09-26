@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://www.jiabeih.cn/2018/09/26/VideoJs%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2018-09-26T09:38:27.018Z</lastmod>
+    <data>
+        <display>
+        <title>VideoJs使用记录</title>
+        <pubTime>2018-09-26T08:53:49.000Z</pubTime>
+        
+        <tag>javaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="javaScript" url="https://www.jiabeih.cn/categories/javaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.jiabeih.cn/2018/09/06/%E5%B8%B8%E7%94%A8JS%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2018-09-26T09:36:51.389Z</lastmod>
     <data>
@@ -17,26 +37,6 @@
            
              
               <breadCrumb title="JS常用方法记录" url="https://www.jiabeih.cn/categories/JS%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E8%AE%B0%E5%BD%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.jiabeih.cn/2018/09/26/VideoJs%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2018-09-26T08:58:10.073Z</lastmod>
-    <data>
-        <display>
-        <title>VideoJs使用记录</title>
-        <pubTime>2018-09-26T08:53:49.000Z</pubTime>
-        
-        <tag>javaScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="javaScript" url="https://www.jiabeih.cn/categories/javaScript/"/>
           
         </display>
     </data>
@@ -73,11 +73,11 @@
         <title>在H5内打开APP踩坑记</title>
         <pubTime>2018-08-29T07:12:29.766Z</pubTime>
         
-        <tag>JavaScript</tag>
-         
         <tag>H5</tag>
          
         <tag>交互</tag>
+         
+        <tag>JavaScript</tag>
          
          
            
