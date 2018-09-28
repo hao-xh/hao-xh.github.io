@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.jiabeih.cn/"/>
-  <updated>2018-09-26T09:38:27.018Z</updated>
+  <updated>2018-09-28T12:47:42.537Z</updated>
   <id>https://www.jiabeih.cn/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试标题</title>
+    <link href="https://www.jiabeih.cn/2018/09/28/%E6%B5%8B%E8%AF%95%E6%A0%87%E9%A2%98/"/>
+    <id>https://www.jiabeih.cn/2018/09/28/测试标题/</id>
+    <published>2018-09-28T12:47:26.000Z</published>
+    <updated>2018-09-28T12:47:42.537Z</updated>
+    
+    <content type="html"><![CDATA[<p>a a a a aa </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;a a a a aa &lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>VideoJs使用记录</title>
