@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.jiabeih.cn/"/>
-  <updated>2018-09-26T09:38:27.018Z</updated>
+  <updated>2018-10-10T02:00:29.851Z</updated>
   <id>https://www.jiabeih.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac下禁止生成.Ds_Store文件及删除方法（转）</title>
+    <link href="https://www.jiabeih.cn/2018/10/10/Mac%E4%B8%8B%E7%A6%81%E6%AD%A2%E7%94%9F%E6%88%90-Ds-Store%E6%96%87%E4%BB%B6%E5%8F%8A%E5%88%A0%E9%99%A4%E6%96%B9%E6%B3%95%EF%BC%88%E8%BD%AC%EF%BC%89/"/>
+    <id>https://www.jiabeih.cn/2018/10/10/Mac下禁止生成-Ds-Store文件及删除方法（转）/</id>
+    <published>2018-10-10T01:54:13.000Z</published>
+    <updated>2018-10-10T02:00:29.851Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文转自<a href="https://blog.csdn.net/chao2016/article/details/78985749#3%E5%88%A0%E9%99%A4%E7%8E%B0%E6%9C%89%E7%9A%84dsstore" target="_blank" rel="noopener">禁止生成.DS_Store文件</a>以记录使用。</p><h1 id="1、禁止-DS-Store文件生成"><a href="#1、禁止-DS-Store文件生成" class="headerlink" title="1、禁止.DS_Store文件生成"></a>1、禁止.DS_Store文件生成</h1><ul><li>打开 “终端”，执行下列命令，重启Mac生效：</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE</span><br></pre></td></tr></table></figure><h1 id="2、恢复-DS-Store生成"><a href="#2、恢复-DS-Store生成" class="headerlink" title="2、恢复.DS_Store生成"></a>2、恢复.DS_Store生成</h1><ul><li>打开 “终端”，执行下列命令，重启Mac生效：</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults <span class="keyword">delete</span> com.apple.desktopservices DSDontWriteNetworkStores</span><br></pre></td></tr></table></figure><h1 id="3、删除现有的-DS-Store"><a href="#3、删除现有的-DS-Store" class="headerlink" title="3、删除现有的.DS_Store"></a>3、删除现有的.DS_Store</h1><ul><li>对已经生成的文件还需要你手动删除：</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo find / -name <span class="string">".DS_Store"</span> -depth -exec rm &#123;&#125; \;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;本文转自&lt;a href=&quot;https://blog.csdn.net/chao2016/article/details/78985749#3%E5%88%A0%E9%99%A4%E7%8E%B0%E6%9C%89%E7%9A%84dsstore&quot; target=&quot;_blan
+      
+    
+    </summary>
+    
+      <category term="Mac技巧" scheme="https://www.jiabeih.cn/categories/Mac%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="Mac技巧" scheme="https://www.jiabeih.cn/tags/Mac%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
   
   <entry>
     <title>VideoJs使用记录</title>
