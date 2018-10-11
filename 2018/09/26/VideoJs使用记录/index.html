@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="进步中的加贝H">
 <meta property="og:description" content="前言记录学习使用videoJs时遇到的好文章。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-26T09:38:27.018Z">
+<meta property="og:updated_time" content="2018-10-11T07:08:24.320Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VideoJs使用记录">
 <meta name="twitter:description" content="前言记录学习使用videoJs时遇到的好文章。">
@@ -357,8 +357,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-26T17:38:27+08:00">
-                2018-09-26
+              <time title="更新于" itemprop="dateModified" datetime="2018-10-11T15:08:24+08:00">
+                2018-10-11
               </time>
             
           </span>
@@ -412,7 +412,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  43
+                  230
                 </span>
               
 
@@ -451,10 +451,17 @@
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>记录学习使用videoJs时遇到的好文章。</p>
 <a id="more"></a>
-<h2 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h2><p><a href="https://blog.csdn.net/zh_rey/article/details/78215968" target="_blank" rel="noopener">video.js API 详解</a></p>
+<h2 id="代码记录"><a href="#代码记录" class="headerlink" title="代码记录"></a>代码记录</h2><p>videojs()生成video播放器时第二个参数添加小屏播放的代码没作用，比如: </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">videojs(<span class="string">'myVideo'</span>,&#123;</span><br><span class="line">      <span class="string">"autoplay"</span>: <span class="literal">false</span>,</span><br><span class="line">      <span class="string">"controls"</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="string">"x5-playsinline"</span>: <span class="literal">true</span>, <span class="comment">// 需单独设置</span></span><br><span class="line">      <span class="string">"playsinline"</span>: <span class="literal">true</span>, <span class="comment">// 需单独设置</span></span><br><span class="line">      <span class="string">"webkit-playsinline"</span>: <span class="literal">true</span>, <span class="comment">// 需单独设置</span></span><br><span class="line">      <span class="string">"poster"</span>: posterImg || <span class="string">""</span>,</span><br><span class="line">      sources: [&#123;</span><br><span class="line">        src: url,</span><br><span class="line">        type: <span class="string">"video/mp4"</span></span><br><span class="line">      &#125;],</span><br><span class="line">      <span class="string">"teachOrder"</span>: [<span class="string">'html5'</span>], <span class="comment">// 默认，可选flash</span></span><br><span class="line">      <span class="comment">// "flash": &#123; // 如果需要flash，则需要单独配置地址</span></span><br><span class="line">      <span class="comment">//   "swf": "指定地址"</span></span><br><span class="line">      <span class="comment">// &#125;</span></span><br><span class="line">      <span class="string">"aspectRatio"</span>: <span class="string">"16:9"</span> <span class="comment">// 播放窗口尺寸</span></span><br><span class="line">    &#125;,<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="comment">// 回调函数</span></span><br><span class="line">      <span class="comment">// console.log(this);</span></span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
+<p>其中的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x5-playsinline: true</span><br><span class="line">webkit-playsinline: true</span><br><span class="line">playsinline: true</span><br></pre></td></tr></table></figure>
+<p>需要在属性上单独设置，比如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">video.attr(&#123;id:&apos;myVideo&apos;,&apos;x5-playsinline&apos;:&apos;true&apos;,&apos;webkit-playsinline&apos;: &apos;true&apos;,&apos;playsinline&apos;: &apos;true&apos;&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="文章记录"><a href="#文章记录" class="headerlink" title="文章记录"></a>文章记录</h2><p><a href="https://blog.csdn.net/zh_rey/article/details/78215968" target="_blank" rel="noopener">video.js API 详解</a></p>
 <p><a href="https://blog.csdn.net/a0405221/article/details/80923090" target="_blank" rel="noopener">videojs中文文档详解</a></p>
 <p><a href="http://www.cnblogs.com/afrog/p/6689179.html" target="_blank" rel="noopener">免费视频播放器videojs中文教程</a></p>
 <p><a href="https://docs.videojs.com/tutorial-videojs_.html" target="_blank" rel="noopener">VIDEOJS</a></p>
+<p><a href="https://www.awaimai.com/2053.html" target="_blank" rel="noopener">video.js使用技巧</a>(其中第五条很实用！)</p>
 
       
       <div>
@@ -482,7 +489,7 @@
   <p><span>本文标题:</span><a href="/2018/09/26/VideoJs使用记录/">VideoJs使用记录</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 加贝H 的个人博客">加贝H</a></p>
   <!-- <p><span>发布时间:</span>2018年09月26日 - 16:09</p>
-  <p><span>最后更新:</span>2018年09月26日 - 17:09</p> -->
+  <p><span>最后更新:</span>2018年10月11日 - 15:10</p> -->
   <p><span>原始链接:</span><a href="/2018/09/26/VideoJs使用记录/" title="VideoJs使用记录">https://www.jiabeih.cn/2018/09/26/VideoJs使用记录/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://www.jiabeih.cn/2018/09/26/VideoJs使用记录/"  aria-label="复制成功！"></i></span>
   </p>
@@ -703,7 +710,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#记录"><span class="nav-number">2.</span> <span class="nav-text">记录</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码记录"><span class="nav-number">2.</span> <span class="nav-text">代码记录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章记录"><span class="nav-number">3.</span> <span class="nav-text">文章记录</span></a></li></ol></div>
             
 
           </div>
@@ -775,7 +782,7 @@
       
         <span class="post-meta-item-text">博客全站共&#58;</span>
       
-      <span title="博客全站共">10.4k字</span>
+      <span title="博客全站共">10.5k字</span>
     </span>
   
 
