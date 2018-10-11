@@ -111,9 +111,9 @@
     <link href="https://www.jiabeih.cn/2018/09/05/%E5%B8%B8%E7%94%A8css%E5%B1%9E%E6%80%A7/"/>
     <id>https://www.jiabeih.cn/2018/09/05/常用css属性/</id>
     <published>2018-09-05T06:14:55.000Z</published>
-    <updated>2018-09-05T06:16:51.063Z</updated>
+    <updated>2018-10-11T07:44:08.197Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>记录常用又背不过的CSS属性！</p><a id="more"></a><h2 id="调整字体间距"><a href="#调整字体间距" class="headerlink" title="调整字体间距"></a>调整字体间距</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">letter-spacing</span>: 2<span class="selector-tag">px</span>;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>记录常用又背不过的CSS属性！</p><a id="more"></a><h2 id="调整字体间距"><a href="#调整字体间距" class="headerlink" title="调整字体间距"></a>调整字体间距</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">letter-spacing</span>: 2<span class="selector-tag">px</span>;</span><br></pre></td></tr></table></figure><h2 id="阻止点击、状态变化和鼠标指针变化"><a href="#阻止点击、状态变化和鼠标指针变化" class="headerlink" title="阻止点击、状态变化和鼠标指针变化"></a>阻止点击、状态变化和鼠标指针变化</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">pointer-events</span>: <span class="selector-tag">none</span>;</span><br></pre></td></tr></table></figure><p>参考<a href="http://www.webhek.com/post/pointer-events.html" target="_blank" rel="noopener">CSS里的pointer-events属性</a></p>]]></content>
     
     <summary type="html">
     
