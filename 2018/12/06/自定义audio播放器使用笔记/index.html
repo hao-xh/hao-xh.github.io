@@ -95,7 +95,7 @@
 
 
 
-  <meta name="keywords" content="瞎折腾," />
+  <meta name="keywords" content="javaScript," />
 
 
 
@@ -108,25 +108,18 @@
 
 
 
-<meta name="description" content="前言本文记录如何将Hexo博客同时部署在GitHub和Coding上。 Coding是什么？我自己的理解：Coding就像是国内的GitHub，托管博客在国内访问比GitHub速度快。我们配置绑定域名时可以让国内访问Coding，其余的访问GitHub。 双项绑定域名，即在海外访问域名时访问的是GitHub，国内访问时访问的是Coding。">
-<meta name="keywords" content="瞎折腾">
+<meta name="description" content="前言近期公司要开发音频播放功能，直播的视频格式因是m3u8，所以使用了video.js开发。而点播具备常用功能，所以了解了一下audio属性，在此记录。">
+<meta name="keywords" content="javaScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo博客同时部署在GitHub与Coding上并双线绑定域名">
-<meta property="og:url" content="https://jiabeih.cn/2018/08/30/Hexo博客同时部署在GitHub与Coding上并自定义域名/index.html">
+<meta property="og:title" content="自定义audio播放器功能笔记">
+<meta property="og:url" content="https://jiabeih.cn/2018/12/06/自定义audio播放器使用笔记/index.html">
 <meta property="og:site_name" content="进步中的加贝H">
-<meta property="og:description" content="前言本文记录如何将Hexo博客同时部署在GitHub和Coding上。 Coding是什么？我自己的理解：Coding就像是国内的GitHub，托管博客在国内访问比GitHub速度快。我们配置绑定域名时可以让国内访问Coding，其余的访问GitHub。 双项绑定域名，即在海外访问域名时访问的是GitHub，国内访问时访问的是Coding。">
+<meta property="og:description" content="前言近期公司要开发音频播放功能，直播的视频格式因是m3u8，所以使用了video.js开发。而点播具备常用功能，所以了解了一下audio属性，在此记录。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://pe3n7jv6x.bkt.clouddn.com/addSSHSuccess.png">
-<meta property="og:image" content="http://pe3n7jv6x.bkt.clouddn.com/seeBlogPage.jpg">
-<meta property="og:image" content="http://pe3n7jv6x.bkt.clouddn.com/pageurl0.png">
-<meta property="og:image" content="http://pe3n7jv6x.bkt.clouddn.com/pageurl1.jpg">
-<meta property="og:image" content="http://pe3n7jv6x.bkt.clouddn.com/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D1.png">
-<meta property="og:image" content="http://pe3n7jv6x.bkt.clouddn.com/pageurl2.png">
-<meta property="og:updated_time" content="2018-08-31T09:19:40.125Z">
+<meta property="og:updated_time" content="2018-12-06T08:33:47.574Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo博客同时部署在GitHub与Coding上并双线绑定域名">
-<meta name="twitter:description" content="前言本文记录如何将Hexo博客同时部署在GitHub和Coding上。 Coding是什么？我自己的理解：Coding就像是国内的GitHub，托管博客在国内访问比GitHub速度快。我们配置绑定域名时可以让国内访问Coding，其余的访问GitHub。 双项绑定域名，即在海外访问域名时访问的是GitHub，国内访问时访问的是Coding。">
-<meta name="twitter:image" content="http://pe3n7jv6x.bkt.clouddn.com/addSSHSuccess.png">
+<meta name="twitter:title" content="自定义audio播放器功能笔记">
+<meta name="twitter:description" content="前言近期公司要开发音频播放功能，直播的视频格式因是m3u8，所以使用了video.js开发。而点播具备常用功能，所以了解了一下audio属性，在此记录。">
 
 
 
@@ -156,13 +149,13 @@
 
 
 
-  <link rel="canonical" href="https://jiabeih.cn/2018/08/30/Hexo博客同时部署在GitHub与Coding上并自定义域名/"/>
+  <link rel="canonical" href="https://jiabeih.cn/2018/12/06/自定义audio播放器使用笔记/"/>
 
 
 
 
 
-  <title>Hexo博客同时部署在GitHub与Coding上并双线绑定域名 | 进步中的加贝H</title>
+  <title>自定义audio播放器功能笔记 | 进步中的加贝H</title>
   
 
 
@@ -319,7 +312,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://jiabeih.cn/2018/08/30/Hexo博客同时部署在GitHub与Coding上并自定义域名/">
+    <link itemprop="mainEntityOfPage" href="https://jiabeih.cn/2018/12/06/自定义audio播放器使用笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="加贝H">
@@ -336,7 +329,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo博客同时部署在GitHub与Coding上并双线绑定域名</h1>
+          <h1 class="post-title" itemprop="name headline">自定义audio播放器功能笔记</h1>
         
 
         <div class="post-meta">
@@ -348,8 +341,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-30T15:06:22+08:00">
-                2018-08-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-06T13:24:15+08:00">
+                2018-12-06
               </time>
             
 
@@ -364,8 +357,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-08-31T17:19:40+08:00">
-                2018-08-31
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-06T16:33:47+08:00">
+                2018-12-06
               </time>
             
           </span>
@@ -383,8 +376,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/博客搭建/" itemprop="url" rel="index">
-                    <span itemprop="name">博客搭建</span>
+                  <a href="/categories/javaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">javaScript</span>
                   </a>
                 </span>
 
@@ -419,7 +412,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,063
+                  929
                 </span>
               
 
@@ -456,45 +449,59 @@
       
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文记录如何将Hexo博客同时部署在GitHub和Coding上。</p>
-<p><a href="https://coding.net/" target="_blank" rel="noopener">Coding</a>是什么？我自己的理解：Coding就像是国内的GitHub，托管博客在国内访问比GitHub速度快。我们配置绑定域名时可以让国内访问Coding，其余的访问GitHub。</p>
-<p>双项绑定域名，即在海外访问域名时访问的是GitHub，国内访问时访问的是Coding。</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>近期公司要开发音频播放功能，直播的视频格式因是m3u8，所以使用了video.js开发。而点播具备常用功能，所以了解了一下audio属性，在此记录。</p>
 <a id="more"></a>
-<h1 id="Coding上新建项目并配置"><a href="#Coding上新建项目并配置" class="headerlink" title="Coding上新建项目并配置"></a>Coding上新建项目并配置</h1><p>首先注册Coding，注册后绑定腾讯云就可以升级成为银会员(银会员才可以绑定域名)。</p>
-<h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><p>名称填写自己的Coding用户名，勾选<strong>启用 README.md 文件初始化项目</strong>进行创建（我也不知道为什么要勾选，看别人是这么说的，以后明白了再回来修改）。</p>
-<h2 id="部署公钥"><a href="#部署公钥" class="headerlink" title="部署公钥"></a>部署公钥</h2><p>依次进入<strong>设置-&gt;部署公钥-&gt;新建部署公钥</strong>，公钥内容粘贴id_rsa.pub内的内容(生成方法在我的上一篇文章<a href="https://jiabeih.cn/2018/08/20/github+hexo%E6%8A%98%E8%85%BE%E8%AE%B0/#more">GitHub+hexo折腾记</a>第6节中查看)。</p>
-<p>部署成功后验证是否添加成功了</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ssh -T git@git.coding.net</span><br></pre></td></tr></table></figure>
-<p>成功后会返回下图：</p>
-<p><img src="http://pe3n7jv6x.bkt.clouddn.com/addSSHSuccess.png" alt="SSH部署"></p>
-<h2 id="将博客部署到Coding"><a href="#将博客部署到Coding" class="headerlink" title="将博客部署到Coding"></a>将博客部署到Coding</h2><p>在bolg根目录的_config.yml配置文件下加一个Coding的git地址：搜索<strong>deploy:</strong>，增加一行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">coding: // 此处填写你自己的git地址</span><br></pre></td></tr></table></figure>
-<p>我的配置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: </span><br><span class="line">    github: # github地址</span><br><span class="line">    coding:  # coding地址</span><br><span class="line">  branch: master</span><br><span class="line">message: &apos;站点更新: &#123;&#123; now(&quot;YYYY-MM-DD HH:mm:ss&quot;) &#125;&#125;&apos;</span><br></pre></td></tr></table></figure>
-<p>然后执行命令行将博客更新到Coding以及GitHub</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d</span><br></pre></td></tr></table></figure>
-<h2 id="浏览"><a href="#浏览" class="headerlink" title="浏览"></a>浏览</h2><p>至此，现在已经可以通过Coding给出的地址(下图)来访问我们的博客页面了<img src="http://pe3n7jv6x.bkt.clouddn.com/seeBlogPage.jpg" alt=""></p>
-<h1 id="双线绑定域名"><a href="#双线绑定域名" class="headerlink" title="双线绑定域名"></a>双线绑定域名</h1><p>如果在此之前已经将自定义域名绑定到了GitHub上，请先将域名解析处的GitHub地址先删除掉，因为这会影响双线绑定的成功。这里我们以腾讯云申请的域名为例。</p>
-<ul>
-<li><p>首先在腾讯云域名解析内添加解析，Coding自定义域名那里有详细的解释。<img src="http://pe3n7jv6x.bkt.clouddn.com/pageurl0.png" alt="添加解析"></p>
-<p>将红圈内的链接填入记录值内，此处将线路类型设置成<strong>默认</strong>。<img src="http://pe3n7jv6x.bkt.clouddn.com/pageurl1.jpg" alt="添加解析"></p>
+<h1 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h1><ul>
+<li>常规播放暂停功能</li>
+<li>上下首切换</li>
+<li>自定义进度条</li>
+<li>拖拽进度条调整进度</li>
+<li>自动播放</li>
+</ul>
+<h1 id="开始开发"><a href="#开始开发" class="headerlink" title="开始开发"></a>开始开发</h1><p>原生JS开发。</p>
+<p>首先创建audio标签：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">id</span>=<span class="string">"myAudio"</span> <span class="attr">src</span>=<span class="string">""</span> <span class="attr">style</span>=<span class="string">"display: none;"</span> <span class="attr">controls</span>=<span class="string">"true"</span>&gt;</span><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>js中获取audio对象：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myAudio = <span class="built_in">document</span>.querySelector(<span class="string">'#myAudio'</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="播放暂停功能"><a href="#播放暂停功能" class="headerlink" title="播放暂停功能"></a>播放暂停功能</h2><p>这里比较简单，只要做好防止用户频繁点击时的报错以及是否正在播放时的状态就好了。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">myAudio.paused; <span class="comment">// 播放状态，暂停时返回true</span></span><br><span class="line">myAudio.pause(); <span class="comment">// 暂停</span></span><br><span class="line">myAudio.play(); <span class="comment">// 播放</span></span><br></pre></td></tr></table></figure>
+<h2 id="上下首切换功能"><a href="#上下首切换功能" class="headerlink" title="上下首切换功能"></a>上下首切换功能</h2><p>此处需判断上首/下首是否存在，若不存在则return。</p>
+<p>如果当前音频在播放时需要暂停当前播放：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(!myAudio.paused) myAudio.pause();</span><br></pre></td></tr></table></figure>
+<p>然后再将新的播放地址写入audio.src内，写入完成后触发播放功能。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myAudio.onended <span class="comment">// 当前音频播放结束时触发</span></span><br></pre></td></tr></table></figure>
+<p>当前音频播放完毕后播放下一首（需判断是否存在下一首）。</p>
+<h2 id="自定义进度条"><a href="#自定义进度条" class="headerlink" title="自定义进度条"></a>自定义进度条</h2><h3 id="要用到的事件方法及属性"><a href="#要用到的事件方法及属性" class="headerlink" title="要用到的事件方法及属性"></a>要用到的事件方法及属性</h3><p>自定义进度条开始前，需要先普及几个audio的事件方法及属性：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">myAudio.onloadstart <span class="comment">// 浏览器开始查找音频时触发</span></span><br><span class="line">myAudio.oncanplay <span class="comment">// 可以播放此音频时触发</span></span><br><span class="line">myAudio.ontimeupdate <span class="comment">// 当播放时间发生变化时触发</span></span><br><span class="line">myAudio.onerror <span class="comment">// 播放发生错误时触发</span></span><br><span class="line">myAudio.load(); <span class="comment">// 开始/重新加载音频</span></span><br><span class="line">myAudio.currentTime; <span class="comment">// 设置或返回音频中的当前播放位置（以秒计）</span></span><br><span class="line">myAudio.duration; <span class="comment">// 返回当前音频的长度（以秒计）</span></span><br></pre></td></tr></table></figure>
+<p>查自于W3CSchool，更详细的解释可以点击<a href="http://www.w3school.com.cn/tags/html_ref_audio_video_dom.asp" target="_blank" rel="noopener">这里</a>查看。</p>
+<h3 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h3><ul>
+<li><p>当开始播放时先调用<code>myAudio.load()</code>，让浏览器开始加载此音频，加载完成后会触发<code>oncanplay</code>事件。（不可在oncanplay时调用，否则不会被执行）</p>
 </li>
-<li><p>然后在Coding自定义域名下绑定新域名。</p>
+<li><p>在<code>oncanplay</code>中，获取音频总播放时长并写入到进度条处。</p>
 </li>
-<li><p>注意：此处一定要先添加Coding的解析，若已经添加了GitHub的解析请先删除，否则SSL证书审核就会出现问题，Coding有个奇怪的规则是必须海外和国内同时能访问到页面时才能审核成功，否则会一直失败。<img src="http://pe3n7jv6x.bkt.clouddn.com/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D1.png" alt="Coding自定义域名"></p>
-</li>
-<li><p>过一会儿如果访问正常了，那么再去将GitHub的解析添加进去，方法差不多，记录值为你的库名(***.github.io)，此处的线路类型一定要设置成<strong>海外</strong>(图片参考上面上面红框外的两条数据)。</p>
-</li>
-<li><p>之后在GitHub上绑定自定义域名，打开<strong>库-&gt;settings，下拉找到GitHub Pages，在Custom domain处添加域名，然后点击Save</strong>。<img src="http://pe3n7jv6x.bkt.clouddn.com/pageurl2.png" alt="GitHub绑定域名"></p>
-</li>
-<li><p>至此，我们绑定域名的操作已经完成了，打开蓝灯访问域名访问到的就是GitHub。博客访问速度明显加快啦~</p>
+<li><p>使用<code>ontimeupdate</code>事件，获取当前播放时长<code>currentTime</code>，并由此计算滚动条的位置及将当前播放时间写入进度条处。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> 当前播放进度百分比 = (myAudio.currentTime/myAudio.duration &lt;= <span class="number">1</span> ? myAudio.currentTime/myAudio.duration : <span class="number">1</span>)*<span class="number">100</span>+<span class="string">'%'</span>;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h1 id="Coding中转页"><a href="#Coding中转页" class="headerlink" title="Coding中转页"></a>Coding中转页</h1><p>访问博客时会有一个5s钟的中转页，这个页面是因为使用Coding托管了我们的博客造成的。设置中给出了解决办法，就是在首页的任意地方添加上它们的代码(毕竟不会让你白用。。)，如果使用Next主题的话，在<strong>/themes/next/layout/_partials/share/footer.swig</strong>下最后添加一行代码：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hosted by <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://pages.coding.me"</span> <span class="attr">style</span>=<span class="string">"font-weight: bold"</span>&gt;</span>Coding Pages<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>因为我是先给GitHub绑定的域名，所以导致Coding的SSL证书一直审核失败，Chrome访问博客时会提示网站不安全不让进，域名解析又要10分钟才能生效导致测试很不方便，整整研究了多半天才找到是因为先绑定了GitHub的原因（具体原因可能是海外访问时已经被指定到了GitHub的托管下，访问不到Coding才会这样），写下来做一笔记，免得再踩坑！</p>
-<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://coding.net/help/doc/pages/creating-pages.html" target="_blank" rel="noopener">Coding帮助文档</a></p>
-<p><a href="https://blog.csdn.net/huhehaotechangsha/article/details/81288143" target="_blank" rel="noopener">用GitHub和Coding双线绑定自定义域名</a></p>
+<p>现在进度条已经可以随着音频的播放而移动了。</p>
+<h2 id="拖拽进度条调整进度功能"><a href="#拖拽进度条调整进度功能" class="headerlink" title="拖拽进度条调整进度功能"></a>拖拽进度条调整进度功能</h2><h3 id="需要用到的事件"><a href="#需要用到的事件" class="headerlink" title="需要用到的事件"></a>需要用到的事件</h3><p>这里需要用到touch事件，分别是：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">obj.addEventListener(<span class="string">'touchstart'</span>,fun); <span class="comment">// 开始触摸</span></span><br><span class="line">obj.addEventListener(<span class="string">'touchmove'</span>,fun); <span class="comment">// 开始移动</span></span><br><span class="line">obj.addEventListener(<span class="string">'touchend'</span>,fun); <span class="comment">// 结束触摸</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>开始触摸时（<code>touchstart</code>），<code>touchmove</code>和<code>touchend</code>需要写在<code>touchstart</code>里面：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">obj.addEventListener(<span class="string">'touchstart'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    obj.addEventListener(<span class="string">'touchmove'</span>,fun);</span><br><span class="line">    obj.addEventListener(<span class="string">'touchend'</span>,fun);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>当开始移动时（<code>touchmove</code>），获取<code>ev.touches[0].clientX</code>（需要做好超出和小于0的判断）：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> clientX = ev.touches[<span class="number">0</span>].clientX &lt; <span class="number">0</span> ? <span class="number">0</span> : ev.touches[<span class="number">0</span>].clientX &gt; <span class="built_in">document</span>.body.clientWidth ? <span class="built_in">document</span>.body.clientWidth : ev.touches[<span class="number">0</span>].clientX;</span><br></pre></td></tr></table></figure>
+<p>并同时计算出当前移动位置的播放时长赋值给页面并记录：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> moveLength = myAudio.currentTime =  myAudio.duration/<span class="built_in">document</span>.body.clientWidth*clientX;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>当手指松开后（<code>touchend</code>），可以进行手指松开后的操作，比如开始播放等。</p>
+</li>
+</ul>
+<h2 id="自动播放功能"><a href="#自动播放功能" class="headerlink" title="自动播放功能"></a>自动播放功能</h2><p>由于IOS系统不允许进入页面后直接播放，必须通过用户的实际操作进行触发，所以与产品经理商量后未添加此功能。</p>
+<p>如果必须要添加的话，可以进入页面后给用户一个引导弹层来触发播放。</p>
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://www.douban.com/note/360099571/" target="_blank" rel="noopener">手机的 HTML5 Audio 播放问题记录</a></p>
+<p><a href="https://www.jianshu.com/p/edc3bd2a60da" target="_blank" rel="noopener">Audio在移动端的实践</a></p>
 
       
       <div>
@@ -519,12 +526,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/08/30/Hexo博客同时部署在GitHub与Coding上并自定义域名/">Hexo博客同时部署在GitHub与Coding上并双线绑定域名</a></p>
+  <p><span>本文标题:</span><a href="/2018/12/06/自定义audio播放器使用笔记/">自定义audio播放器功能笔记</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 加贝H 的个人博客">加贝H</a></p>
-  <!-- <p><span>发布时间:</span>2018年08月30日 - 15:08</p>
-  <p><span>最后更新:</span>2018年08月31日 - 17:08</p> -->
-  <p><span>原始链接:</span><a href="/2018/08/30/Hexo博客同时部署在GitHub与Coding上并自定义域名/" title="Hexo博客同时部署在GitHub与Coding上并双线绑定域名">https://jiabeih.cn/2018/08/30/Hexo博客同时部署在GitHub与Coding上并自定义域名/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://jiabeih.cn/2018/08/30/Hexo博客同时部署在GitHub与Coding上并自定义域名/"  aria-label="复制成功！"></i></span>
+  <!-- <p><span>发布时间:</span>2018年12月06日 - 13:12</p>
+  <p><span>最后更新:</span>2018年12月06日 - 16:12</p> -->
+  <p><span>原始链接:</span><a href="/2018/12/06/自定义audio播放器使用笔记/" title="自定义audio播放器功能笔记">https://jiabeih.cn/2018/12/06/自定义audio播放器使用笔记/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://jiabeih.cn/2018/12/06/自定义audio播放器使用笔记/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -554,7 +561,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/瞎折腾/" rel="tag"><i class="fa fa-tag"></i> 瞎折腾</a>
+            <a href="/tags/javaScript/" rel="tag"><i class="fa fa-tag"></i> javaScript</a>
           
         </div>
       
@@ -567,8 +574,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/29/关于在H5打开APP/" rel="next" title="在H5页面中唤醒APP踩坑记">
-                <i class="fa fa-chevron-left"></i> 在H5页面中唤醒APP踩坑记
+              <a href="/2018/12/03/使用windows-to-go-把系统装进硬盘并给硬盘分区/" rel="next" title="使用windows to go把系统装进移动硬盘并给移动硬盘分区">
+                <i class="fa fa-chevron-left"></i> 使用windows to go把系统装进移动硬盘并给移动硬盘分区
               </a>
             
           </div>
@@ -576,10 +583,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/03/Hexo主题美化/" rel="prev" title="Hexo主题美化">
-                Hexo主题美化 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -743,7 +746,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Coding上新建项目并配置"><span class="nav-number">2.</span> <span class="nav-text">Coding上新建项目并配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建项目"><span class="nav-number">2.1.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署公钥"><span class="nav-number">2.2.</span> <span class="nav-text">部署公钥</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将博客部署到Coding"><span class="nav-number">2.3.</span> <span class="nav-text">将博客部署到Coding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览"><span class="nav-number">2.4.</span> <span class="nav-text">浏览</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#双线绑定域名"><span class="nav-number">3.</span> <span class="nav-text">双线绑定域名</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Coding中转页"><span class="nav-number">4.</span> <span class="nav-text">Coding中转页</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结语"><span class="nav-number">5.</span> <span class="nav-text">结语</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文章"><span class="nav-number">6.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#需求"><span class="nav-number">2.</span> <span class="nav-text">需求</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开始开发"><span class="nav-number">3.</span> <span class="nav-text">开始开发</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#播放暂停功能"><span class="nav-number">3.1.</span> <span class="nav-text">播放暂停功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#上下首切换功能"><span class="nav-number">3.2.</span> <span class="nav-text">上下首切换功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义进度条"><span class="nav-number">3.3.</span> <span class="nav-text">自定义进度条</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#要用到的事件方法及属性"><span class="nav-number">3.3.1.</span> <span class="nav-text">要用到的事件方法及属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现步骤"><span class="nav-number">3.3.2.</span> <span class="nav-text">实现步骤</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拖拽进度条调整进度功能"><span class="nav-number">3.4.</span> <span class="nav-text">拖拽进度条调整进度功能</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#需要用到的事件"><span class="nav-number">3.4.1.</span> <span class="nav-text">需要用到的事件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自动播放功能"><span class="nav-number">3.5.</span> <span class="nav-text">自动播放功能</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文章"><span class="nav-number">4.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
             
 
           </div>
