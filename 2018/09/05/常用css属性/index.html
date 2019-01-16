@@ -116,10 +116,12 @@
 <meta property="og:site_name" content="进步中的加贝H">
 <meta property="og:description" content="前言记录常用又背不过的CSS属性！">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-26T08:59:41.052Z">
+<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/CSS%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E8%AE%B0%E5%BD%95/format.png?q-sign-algorithm=sha1&q-ak=AKID6rbDVlpPrdKIV9Rp8pjP2HF676Pl5hFa&q-sign-time=1547609925;1547611725&q-key-time=1547609925;1547611725&q-header-list=&q-url-param-list=&q-signature=badef8ab8ab83aa13cbd635573a0e65213c977ed&x-cos-security-token=271fb75e6622a8c3e129a9a8210e685fe44a8ad110001">
+<meta property="og:updated_time" content="2019-01-16T03:39:59.523Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常用css属性">
 <meta name="twitter:description" content="前言记录常用又背不过的CSS属性！">
+<meta name="twitter:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/CSS%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E8%AE%B0%E5%BD%95/format.png?q-sign-algorithm=sha1&q-ak=AKID6rbDVlpPrdKIV9Rp8pjP2HF676Pl5hFa&q-sign-time=1547609925;1547611725&q-key-time=1547609925;1547611725&q-header-list=&q-url-param-list=&q-signature=badef8ab8ab83aa13cbd635573a0e65213c977ed&x-cos-security-token=271fb75e6622a8c3e129a9a8210e685fe44a8ad110001">
 
 
 
@@ -357,8 +359,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-10-26T16:59:41+08:00">
-                2018-10-26
+              <time title="更新于" itemprop="dateModified" datetime="2019-01-16T11:39:59+08:00">
+                2019-01-16
               </time>
             
           </span>
@@ -412,7 +414,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  83
+                  625
                 </span>
               
 
@@ -428,7 +430,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -456,6 +458,58 @@
 <p>参考<a href="http://www.webhek.com/post/pointer-events.html" target="_blank" rel="noopener">CSS里的pointer-events属性</a></p>
 <h2 id="移动端-Android、IOS-点击元素时的灰色背景"><a href="#移动端-Android、IOS-点击元素时的灰色背景" class="headerlink" title="移动端(Android、IOS)点击元素时的灰色背景"></a>移动端(Android、IOS)点击元素时的灰色背景</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">-webkit-tap-highlight-color</span>: <span class="selector-tag">transparent</span>;</span><br></pre></td></tr></table></figure>
 <p>也可将transparent设置成其他颜色！</p>
+<h2 id="引入外部字体"><a href="#引入外部字体" class="headerlink" title="引入外部字体"></a>引入外部字体</h2><h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">font-face</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">"字体名字，字母拼写，需要带引号"</span>;</span><br><span class="line">    <span class="attribute">src</span>:<span class="built_in">url</span>(<span class="string">'字体相对/绝对路径'</span>) <span class="built_in">format</span>(<span class="string">'类型'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span>, <span class="selector-tag">html</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">'本地字体1'</span>,<span class="string">'本地字体2'</span>,引入的字体;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="format类型："><a href="#format类型：" class="headerlink" title="format类型："></a>format类型：</h3><p>指字体格式，主要用于浏览器识别。</p>
+<table>
+<thead>
+<tr>
+<th>String</th>
+<th>Font Format</th>
+<th>Common extensions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>‘woff’</td>
+<td><a href="http://www.w3.org/TR/WOFF/" target="_blank" rel="noopener">WOFF (Web Open Font Format)</a></td>
+<td>.woff</td>
+</tr>
+<tr>
+<td>‘truetype’</td>
+<td><a href="http://www.microsoft.com/typography/otspec/default.htm" target="_blank" rel="noopener">TrueType</a></td>
+<td>.ttf</td>
+</tr>
+<tr>
+<td>‘opentype’</td>
+<td><a href="http://www.microsoft.com/typography/otspec/default.htm" target="_blank" rel="noopener">OpenType</a></td>
+<td>.ttf, .otf</td>
+</tr>
+<tr>
+<td>‘embedded-opentype’</td>
+<td><a href="http://www.w3.org/Submission/2008/SUBM-EOT-20080305/" target="_blank" rel="noopener">Embedded OpenType</a></td>
+<td>.eot</td>
+</tr>
+<tr>
+<td>‘svg’</td>
+<td><a href="http://www.w3.org/TR/SVG/fonts.html" target="_blank" rel="noopener">SVG Font</a></td>
+<td>.svg, .svgz</td>
+</tr>
+</tbody>
+</table>
+<h3 id="兼容性："><a href="#兼容性：" class="headerlink" title="兼容性："></a>兼容性：</h3><p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/CSS%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E8%AE%B0%E5%BD%95/format.png?q-sign-algorithm=sha1&amp;q-ak=AKID6rbDVlpPrdKIV9Rp8pjP2HF676Pl5hFa&amp;q-sign-time=1547609925;1547611725&amp;q-key-time=1547609925;1547611725&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=badef8ab8ab83aa13cbd635573a0e65213c977ed&amp;x-cos-security-token=271fb75e6622a8c3e129a9a8210e685fe44a8ad110001" alt="兼容性"></p>
+<p>说到浏览器对@font-face的兼容问题，这里涉及到一个字体format的问题，因为不同的浏览器对字体格式支持是不一致的，这样大家有必要了解一下，各种版本的浏览器支持什么样的字体，前面也简单带到了有关字体的几种格式，下面我就分别说一下这个问题，让大家心里有一个概念：</p>
+<p>1、TureTpe(.ttf)格式：</p>
+<p>.ttf字体是Windows和Mac的最常见的字体，是一种RAW格式，因此他不为网站优化,支持这种字体的浏览器有【IE9+, Firefox3.5+, Chrome4+, Safari3+, Opera10+, iOS Mobile Safari4.2+】；</p>
+<p>2、OpenType(.otf)格式：</p>
+<p>.otf字体被认为是一种原始的字体格式，其内置在TureType的基础上，所以也提供了更多的功能,支持这种字体的浏览器有【Firefox3.5+, Chrome4.0+, Safari3.1+, Opera10.0+, iOS Mobile Safari4.2+】；</p>
+<p>3、Web Open Font Format(.woff)格式：</p>
+<p>.woff字体是Web字体中最佳格式，他是一个开放的TrueType/OpenType的压缩版本，同时也支持元数据包的分离,支持这种字体的浏览器有【IE9+, Firefox3.5+, Chrome6+, Safari3.6+, Opera11.1+】；</p>
+<p>4、Embedded Open Type(.eot)格式：</p>
+<p>.eot字体是IE专用字体，可以从TrueType创建此格式字体,支持这种字体的浏览器有【IE4+】；</p>
+<p>5、SVG(.svg)格式：</p>
+<p>.svg字体是基于SVG字体渲染的一种格式,支持这种字体的浏览器有【Chrome4+, Safari3.1+, Opera10.0+, iOS Mobile Safari3.2+】。</p>
+<p>其中兼容写法：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">font-face</span> &#123;  	</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">'YourWebFontName'</span>;  	</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'YourWebFontName.eot'</span>); <span class="comment">/* IE9 Compat Modes */</span>  	</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'YourWebFontName.eot?#iefix'</span>) <span class="built_in">format</span>(<span class="string">'embedded-opentype'</span>), <span class="comment">/* IE6-IE8 */</span>               </span><br><span class="line">         <span class="built_in">url</span>(<span class="string">'YourWebFontName.woff'</span>) <span class="built_in">format</span>(<span class="string">'woff'</span>), <span class="comment">/* Modern Browsers */</span>               </span><br><span class="line">         <span class="built_in">url</span>(<span class="string">'YourWebFontName.ttf'</span>)  <span class="built_in">format</span>(<span class="string">'truetype'</span>), <span class="comment">/* Safari, Android, iOS */</span>               </span><br><span class="line">         <span class="built_in">url</span>(<span class="string">'YourWebFontName.svg#YourWebFontName'</span>) <span class="built_in">format</span>(<span class="string">'svg'</span>); <span class="comment">/* Legacy iOS */</span>     </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
       <div>
@@ -483,7 +537,7 @@
   <p><span>本文标题:</span><a href="/2018/09/05/常用css属性/">常用css属性</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 加贝H 的个人博客">加贝H</a></p>
   <!-- <p><span>发布时间:</span>2018年09月05日 - 14:09</p>
-  <p><span>最后更新:</span>2018年10月26日 - 16:10</p> -->
+  <p><span>最后更新:</span>2019年01月16日 - 11:01</p> -->
   <p><span>原始链接:</span><a href="/2018/09/05/常用css属性/" title="常用css属性">https://jiabeih.cn/2018/09/05/常用css属性/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://jiabeih.cn/2018/09/05/常用css属性/"  aria-label="复制成功！"></i></span>
   </p>
@@ -704,7 +758,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调整字体间距"><span class="nav-number">2.</span> <span class="nav-text">调整字体间距</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#阻止点击、状态变化和鼠标指针变化"><span class="nav-number">3.</span> <span class="nav-text">阻止点击、状态变化和鼠标指针变化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#移动端-Android、IOS-点击元素时的灰色背景"><span class="nav-number">4.</span> <span class="nav-text">移动端(Android、IOS)点击元素时的灰色背景</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调整字体间距"><span class="nav-number">2.</span> <span class="nav-text">调整字体间距</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#阻止点击、状态变化和鼠标指针变化"><span class="nav-number">3.</span> <span class="nav-text">阻止点击、状态变化和鼠标指针变化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#移动端-Android、IOS-点击元素时的灰色背景"><span class="nav-number">4.</span> <span class="nav-text">移动端(Android、IOS)点击元素时的灰色背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引入外部字体"><span class="nav-number">5.</span> <span class="nav-text">引入外部字体</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用法"><span class="nav-number">5.1.</span> <span class="nav-text">用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#format类型："><span class="nav-number">5.2.</span> <span class="nav-text">format类型：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性："><span class="nav-number">5.3.</span> <span class="nav-text">兼容性：</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -776,7 +830,7 @@
       
         <span class="post-meta-item-text">博客全站共&#58;</span>
       
-      <span title="博客全站共">13.9k字</span>
+      <span title="博客全站共">14.5k字</span>
     </span>
   
 
