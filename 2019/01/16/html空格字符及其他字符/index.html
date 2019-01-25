@@ -108,18 +108,18 @@
 
 
 
-<meta name="description" content="CSS属性支持CSSwhite-space属性。 参数：pre，空白会被浏览器保留。其行为方式类似 HTML 中的  标签。（输入多少空格就会展示多少空格） 例如：啊 喔   额      咦 展示：啊 喔   额      咦 参数：pre-wrap，保留空白符序列，但是正常地进行换行。 例如：啊 喔   额   ​    咦 展示：啊 喔   额   ​    咦 参数：pre-line，合并">
+<meta name="description" content="前言记录html空格字符及其他字符(转)">
 <meta name="keywords" content="html,css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="html空格字符及其他字符(转)">
 <meta property="og:url" content="https://jiabeih.cn/2019/01/16/html空格字符及其他字符/index.html">
 <meta property="og:site_name" content="进步中的加贝H">
-<meta property="og:description" content="CSS属性支持CSSwhite-space属性。 参数：pre，空白会被浏览器保留。其行为方式类似 HTML 中的  标签。（输入多少空格就会展示多少空格） 例如：啊 喔   额      咦 展示：啊 喔   额      咦 参数：pre-wrap，保留空白符序列，但是正常地进行换行。 例如：啊 喔   额   ​    咦 展示：啊 喔   额   ​    咦 参数：pre-line，合并">
+<meta property="og:description" content="前言记录html空格字符及其他字符(转)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-16T03:23:14.305Z">
+<meta property="og:updated_time" content="2019-01-25T04:29:40.013Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="html空格字符及其他字符(转)">
-<meta name="twitter:description" content="CSS属性支持CSSwhite-space属性。 参数：pre，空白会被浏览器保留。其行为方式类似 HTML 中的  标签。（输入多少空格就会展示多少空格） 例如：啊 喔   额      咦 展示：啊 喔   额      咦 参数：pre-wrap，保留空白符序列，但是正常地进行换行。 例如：啊 喔   额   ​    咦 展示：啊 喔   额   ​    咦 参数：pre-line，合并">
+<meta name="twitter:description" content="前言记录html空格字符及其他字符(转)">
 
 
 
@@ -357,8 +357,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-01-16T11:23:14+08:00">
-                2019-01-16
+              <time title="更新于" itemprop="dateModified" datetime="2019-01-25T12:29:40+08:00">
+                2019-01-25
               </time>
             
           </span>
@@ -412,7 +412,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  184
+                  226
                 </span>
               
 
@@ -449,18 +449,21 @@
       
 
       
-        <h1 id="CSS属性支持"><a href="#CSS属性支持" class="headerlink" title="CSS属性支持"></a>CSS属性支持</h1><p>CSS<strong>white-space</strong>属性。</p>
-<p>参数：<strong>pre</strong>，空白会被浏览器保留。其行为方式类似 HTML 中的 <pre> 标签。（输入多少空格就会展示多少空格）</pre></p>
-<p>例如：<div style="white-space:pre;">啊 喔   额      咦</div></p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>记录html空格字符及其他字符(转)</p>
+<a id="more"></a>
+<h1 id="CSS属性支持"><a href="#CSS属性支持" class="headerlink" title="CSS属性支持"></a>CSS属性支持</h1><p>CSS<strong>white-space</strong>属性。</p>
+<p>参数：<strong>pre</strong>，空白会被浏览器保留。其行为方式类似 HTML 中的 \<pre> 标签。（输入多少空格就会展示多少空格）</pre></p>
+<p>例如：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"white-space:pre;"</span>&gt;</span>啊 喔   额      咦<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>展示：啊 喔   额      咦</p>
 <p>参数：<strong>pre-wrap</strong>，保留空白符序列，但是正常地进行换行。</p>
-<p>例如：<div style="white-space:pre-wrap;">啊 喔   额  </div></p>
-<p>​    咦</p>
+<p>例如：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"white-space:pre-wrap;"</span>&gt;</span>啊 喔   额  </span><br><span class="line"></span><br><span class="line">    咦<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>展示：啊 喔   额  </p>
 <p>​    咦</p>
 <p>参数：<strong>pre-line</strong>，合并空白符序列，但是保留换行符。</p>
-<p>例如：<div style="white-space:pre-line;">啊 喔   额  </div></p>
-<p>​    咦</p>
+<p>例如：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"white-space:pre-line;"</span>&gt;</span>啊 喔   额  </span><br><span class="line"></span><br><span class="line">    咦<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>展示：啊 喔 额 咦</p>
 <h1 id="空格字符输出"><a href="#空格字符输出" class="headerlink" title="空格字符输出"></a>空格字符输出</h1><table>
 <thead>
@@ -559,7 +562,7 @@
   <p><span>本文标题:</span><a href="/2019/01/16/html空格字符及其他字符/">html空格字符及其他字符(转)</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 加贝H 的个人博客">加贝H</a></p>
   <!-- <p><span>发布时间:</span>2019年01月16日 - 10:01</p>
-  <p><span>最后更新:</span>2019年01月16日 - 11:01</p> -->
+  <p><span>最后更新:</span>2019年01月25日 - 12:01</p> -->
   <p><span>原始链接:</span><a href="/2019/01/16/html空格字符及其他字符/" title="html空格字符及其他字符(转)">https://jiabeih.cn/2019/01/16/html空格字符及其他字符/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://jiabeih.cn/2019/01/16/html空格字符及其他字符/"  aria-label="复制成功！"></i></span>
   </p>
@@ -778,7 +781,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS属性支持"><span class="nav-number">1.</span> <span class="nav-text">CSS属性支持</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#空格字符输出"><span class="nav-number">2.</span> <span class="nav-text">空格字符输出</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML中常用字符"><span class="nav-number">3.</span> <span class="nav-text">HTML中常用字符</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS属性支持"><span class="nav-number">2.</span> <span class="nav-text">CSS属性支持</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#空格字符输出"><span class="nav-number">3.</span> <span class="nav-text">空格字符输出</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML中常用字符"><span class="nav-number">4.</span> <span class="nav-text">HTML中常用字符</span></a></li></ol></div>
             
 
           </div>
