@@ -108,28 +108,28 @@
 
 
 
-<meta name="description" content="前言工欲善其事，必先利其器。这里记录了几个IPTV开发和移动端H5开发时的log工具，内容均为网上整合。">
+<meta name="description" content="前言工欲善其事，必先利其器。这里记录了几个IPTV开发和移动端H5开发时的log工具，以为网上的内容有些杂，这里我将常用的记录在了一起。">
 <meta name="keywords" content="开发工具">
 <meta property="og:type" content="article">
 <meta property="og:title" content="IPTV页面及功能开发、移动端开发调试工具">
 <meta property="og:url" content="https://jiabeih.cn/2019/02/26/IPTV开发、移动端开发调试工具/index.html">
 <meta property="og:site_name" content="进步中的加贝H">
-<meta property="og:description" content="前言工欲善其事，必先利其器。这里记录了几个IPTV开发和移动端H5开发时的log工具，内容均为网上整合。">
+<meta property="og:description" content="前言工欲善其事，必先利其器。这里记录了几个IPTV开发和移动端H5开发时的log工具，以为网上的内容有些杂，这里我将常用的记录在了一起。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/kaifa.png">
-<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode1.png?q-sign-algorithm=sha1&q-ak=AKIDpxw8FodbbOj2EtyVNtF95MT3uz6n5BKj&q-sign-time=1551148366;1551150166&q-key-time=1551148366;1551150166&q-header-list=&q-url-param-list=&q-signature=1bebc934ab2d04dfdd19ddad54663681cff4e24d&x-cos-security-token=df7144f148722a54a236d4c30434af6e7b2902c510001">
-<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode2.png?q-sign-algorithm=sha1&q-ak=AKIDKBqgt1s50h9jeypbJAkEeVCxMcdpoQaH&q-sign-time=1551148422;1551150222&q-key-time=1551148422;1551150222&q-header-list=&q-url-param-list=&q-signature=1783de11df896a87c75165d53dc34d3c1e478514&x-cos-security-token=cc8b96de2651ad24d4acd627f394e8153205c5fb10001">
-<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode3.png?q-sign-algorithm=sha1&q-ak=AKIDnjOxMsp9ytBRxnrefJ0cMSvUElxrTiJD&q-sign-time=1551148595;1551150395&q-key-time=1551148595;1551150395&q-header-list=&q-url-param-list=&q-signature=6b13278f81129875897fb74f37a91d5f3c69713c&x-cos-security-token=b4d1d65bdb204e87b8218ea13b7540de4d1befb810001">
-<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode4.png?q-sign-algorithm=sha1&q-ak=AKIDT6vtxLavjzIyzsMXkSzjzuJhZ2Qw7Qda&q-sign-time=1551148994;1551150794&q-key-time=1551148994;1551150794&q-header-list=&q-url-param-list=&q-signature=751458faaad9a62bdce08e87bd67eeecaaf3c687&x-cos-security-token=c1db914c63f5983a0fe26285dac55fd3e06abc3110001">
+<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode1.png?q-sign-algorithm=sha1&q-ak=AKIDWs22OBhfrWnc5KdRG1kV5kIvhpd9s1vG&q-sign-time=1551151305;1551153105&q-key-time=1551151305;1551153105&q-header-list=&q-url-param-list=&q-signature=3fa0364e970038b33ce3b7d366670bd7103f5098&x-cos-security-token=cbfcd8bddacdf6468f4ce7eb3fef4cf40198410010001">
+<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode2.png?q-sign-algorithm=sha1&q-ak=AKIDQKTuHngKzvVQxq8RHyLrxVn20JCy9Enf&q-sign-time=1551151326;1551153126&q-key-time=1551151326;1551153126&q-header-list=&q-url-param-list=&q-signature=cedb5b03df2b20a566bc24e68fba2abebb54ae74&x-cos-security-token=f25573fe90edbba67e98cf0bbad79d1a2b95aebf10001">
+<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode3.png?q-sign-algorithm=sha1&q-ak=AKIDuFwGaDNX27bSWInIuLAhqUL935Np4huz&q-sign-time=1551151350;1551153150&q-key-time=1551151350;1551153150&q-header-list=&q-url-param-list=&q-signature=8e43a882a5b8e7a19fc5b5f8cffff9a13ff19ba5&x-cos-security-token=3f9f00ec25ff9955017588ba864afc742ce11fe310001">
+<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode4.png?q-sign-algorithm=sha1&q-ak=AKIDMkWEuO0VhOXsp80hlmz7WU6XCuyUYWDp&q-sign-time=1551151377;1551153177&q-key-time=1551151377;1551153177&q-header-list=&q-url-param-list=&q-signature=9d6d53683aabd6cc56d768a3cb539a8c776ab828&x-cos-security-token=1a9e48bdea9e34232b3a0fcbbc85dc86e0ec1d8710001">
 <meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/weinre1.png?q-sign-algorithm=sha1&q-ak=AKIDSKcIAFYnOKDHBfFJ2MVSESZmJYA7l2Ty&q-sign-time=1551150103;1551151903&q-key-time=1551150103;1551151903&q-header-list=&q-url-param-list=&q-signature=44f970cef74e36810754e4ffafd9b145fff45d78&x-cos-security-token=3509f3c7e804146ad1a7df16b11a453da1ef144010001">
 <meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/weinre2.png?q-sign-algorithm=sha1&q-ak=AKIDcbAzGVBwL1j3z7N0i8pLSHMr9CubidVC&q-sign-time=1551150226;1551152026&q-key-time=1551150226;1551152026&q-header-list=&q-url-param-list=&q-signature=d617cc3e8629580b3c4e18a0a3498747aa1d6e85&x-cos-security-token=25ca46fc7b85846c963fb158c40c9ce818ced8da10001">
 <meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/weinre3.png?q-sign-algorithm=sha1&q-ak=AKID4nmRHM29Iq2vll7lAg4BsdlbLDF6uTaM&q-sign-time=1551150203;1551152003&q-key-time=1551150203;1551152003&q-header-list=&q-url-param-list=&q-signature=1196ee496033c94080c23b6b8f1841c35d3deb0f&x-cos-security-token=3d1b4590bd52cb70426b6a54dbb498290057e6da10001">
 <meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/weinre4.png?q-sign-algorithm=sha1&q-ak=AKIDMpXpJeCbHv4pMhW0s4daYIfGk5WQxS2G&q-sign-time=1551150184;1551151984&q-key-time=1551150184;1551151984&q-header-list=&q-url-param-list=&q-signature=436946d5cd1083209fa96c7e688d7758b35e85e4&x-cos-security-token=0e144e639e40b23f8292fbeec59fab36bf44d65c10001">
 <meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/weinre5.png?q-sign-algorithm=sha1&q-ak=AKIDT5sSFHAFc6afR7TaAKMYrYm3i7T9c84i&q-sign-time=1551150406;1551152206&q-key-time=1551150406;1551152206&q-header-list=&q-url-param-list=&q-signature=f839e50d1cf15230b5ff83e79704952cdb94871c&x-cos-security-token=e5b2f35b62901fd1d009fc943ec75938e0df6e6d10001">
-<meta property="og:updated_time" content="2019-02-26T03:16:08.635Z">
+<meta property="og:updated_time" content="2019-02-26T03:23:14.389Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IPTV页面及功能开发、移动端开发调试工具">
-<meta name="twitter:description" content="前言工欲善其事，必先利其器。这里记录了几个IPTV开发和移动端H5开发时的log工具，内容均为网上整合。">
+<meta name="twitter:description" content="前言工欲善其事，必先利其器。这里记录了几个IPTV开发和移动端H5开发时的log工具，以为网上的内容有些杂，这里我将常用的记录在了一起。">
 <meta name="twitter:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/kaifa.png">
 
 
@@ -368,7 +368,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-02-26T11:16:08+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-26T11:23:14+08:00">
                 2019-02-26
               </time>
             
@@ -423,7 +423,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  773
+                  801
                 </span>
               
 
@@ -460,13 +460,13 @@
       
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>工欲善其事，必先利其器。这里记录了几个IPTV开发和移动端H5开发时的log工具，内容均为网上整合。</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>工欲善其事，必先利其器。这里记录了几个IPTV开发和移动端H5开发时的log工具，以为网上的内容有些杂，这里我将常用的记录在了一起。</p>
 <a id="more"></a>
 <p>我开发时的设备是Mac、iphone X。所以不记录Android的方法，以后用到再进行填充（主要买不起两个手机，只有自己的苹果手机供测试用）。</p>
 <h1 id="最方便的iOS设备真机调试"><a href="#最方便的iOS设备真机调试" class="headerlink" title="最方便的iOS设备真机调试"></a>最方便的iOS设备真机调试</h1><p>所需设备：</p>
 <blockquote>
 <p>电脑，我是Mac笔记本</p>
-<p>手机，iPhone</p>
+<p>iPhone</p>
 <p>数据线，苹果手机能用的就行</p>
 </blockquote>
 <ul>
@@ -475,24 +475,26 @@
 <li><p>电脑打开safari浏览器，选择顶部的<code>开发</code>选项，选择<code>自己的手机</code>，然后选择<code>要调试的页面</code>。</p>
 <p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/kaifa.png" alt=""></p>
 </li>
+<li><p>下面就可以使用弹出的调试框了！</p>
+</li>
 </ul>
-<p>注意不要让手机屏幕黑屏，不然会影响调试。</p>
+<p>tips:注意不要让手机屏幕黑屏，不然会影响调试。</p>
 <h1 id="iOS虚拟机调试-使用iOS-Simulator调试"><a href="#iOS虚拟机调试-使用iOS-Simulator调试" class="headerlink" title="iOS虚拟机调试-使用iOS Simulator调试"></a>iOS虚拟机调试-使用iOS Simulator调试</h1><p>需要工具:</p>
 <blockquote>
 <p>一台装有X Code的电脑</p>
 </blockquote>
 <ul>
 <li><p>下载并打开X Code；</p>
-<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode1.png?q-sign-algorithm=sha1&amp;q-ak=AKIDpxw8FodbbOj2EtyVNtF95MT3uz6n5BKj&amp;q-sign-time=1551148366;1551150166&amp;q-key-time=1551148366;1551150166&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=1bebc934ab2d04dfdd19ddad54663681cff4e24d&amp;x-cos-security-token=df7144f148722a54a236d4c30434af6e7b2902c510001" alt=""></p>
+<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode1.png?q-sign-algorithm=sha1&amp;q-ak=AKIDWs22OBhfrWnc5KdRG1kV5kIvhpd9s1vG&amp;q-sign-time=1551151305;1551153105&amp;q-key-time=1551151305;1551153105&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=3fa0364e970038b33ce3b7d366670bd7103f5098&amp;x-cos-security-token=cbfcd8bddacdf6468f4ce7eb3fef4cf40198410010001" alt=""></p>
 </li>
 <li><p>默认打开后会先显示一个iOS虚拟机，更换虚拟机型号可以由此进入；</p>
-<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode2.png?q-sign-algorithm=sha1&amp;q-ak=AKIDKBqgt1s50h9jeypbJAkEeVCxMcdpoQaH&amp;q-sign-time=1551148422;1551150222&amp;q-key-time=1551148422;1551150222&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=1783de11df896a87c75165d53dc34d3c1e478514&amp;x-cos-security-token=cc8b96de2651ad24d4acd627f394e8153205c5fb10001" alt=""></p>
+<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode2.png?q-sign-algorithm=sha1&amp;q-ak=AKIDQKTuHngKzvVQxq8RHyLrxVn20JCy9Enf&amp;q-sign-time=1551151326;1551153126&amp;q-key-time=1551151326;1551153126&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=cedb5b03df2b20a566bc24e68fba2abebb54ae74&amp;x-cos-security-token=f25573fe90edbba67e98cf0bbad79d1a2b95aebf10001" alt=""></p>
 </li>
 <li><p>如果不小心打开的iOS虚拟机多了想关闭，点击这里；</p>
-<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode3.png?q-sign-algorithm=sha1&amp;q-ak=AKIDnjOxMsp9ytBRxnrefJ0cMSvUElxrTiJD&amp;q-sign-time=1551148595;1551150395&amp;q-key-time=1551148595;1551150395&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=6b13278f81129875897fb74f37a91d5f3c69713c&amp;x-cos-security-token=b4d1d65bdb204e87b8218ea13b7540de4d1befb810001" alt=""></p>
+<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode3.png?q-sign-algorithm=sha1&amp;q-ak=AKIDuFwGaDNX27bSWInIuLAhqUL935Np4huz&amp;q-sign-time=1551151350;1551153150&amp;q-key-time=1551151350;1551153150&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=8e43a882a5b8e7a19fc5b5f8cffff9a13ff19ba5&amp;x-cos-security-token=3f9f00ec25ff9955017588ba864afc742ce11fe310001" alt=""></p>
 </li>
 <li><p>进入iOS虚拟机后点开Safari浏览器，访问我们的项目页面，然后打开电脑上的Safari浏览器，通过选择<code>开发-&gt;模拟器-&gt;项目页面</code>即可看到熟悉的控制台界面；</p>
-<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode4.png?q-sign-algorithm=sha1&amp;q-ak=AKIDT6vtxLavjzIyzsMXkSzjzuJhZ2Qw7Qda&amp;q-sign-time=1551148994;1551150794&amp;q-key-time=1551148994;1551150794&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=751458faaad9a62bdce08e87bd67eeecaaf3c687&amp;x-cos-security-token=c1db914c63f5983a0fe26285dac55fd3e06abc3110001" alt=""></p>
+<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode4.png?q-sign-algorithm=sha1&amp;q-ak=AKIDMkWEuO0VhOXsp80hlmz7WU6XCuyUYWDp&amp;q-sign-time=1551151377;1551153177&amp;q-key-time=1551151377;1551153177&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=9d6d53683aabd6cc56d768a3cb539a8c776ab828&amp;x-cos-security-token=1a9e48bdea9e34232b3a0fcbbc85dc86e0ec1d8710001" alt=""></p>
 </li>
 </ul>
 <p>其中Simulator虚拟iOS系统的用法很简单，其中双指捏合的动作是按下alt键+触摸板下按移动就行了。</p>
