@@ -95,7 +95,7 @@
 
 
 
-  <meta name="keywords" content="JavaScript," />
+  <meta name="keywords" content="开发工具," />
 
 
 
@@ -108,18 +108,29 @@
 
 
 
-<meta name="description" content="前言记录常用又背不过的JS方法！">
-<meta name="keywords" content="JavaScript">
+<meta name="description" content="前言工欲善其事，必先利其器。这里记录了几个IPTV开发和移动端H5开发时的log工具，内容均为网上整合。">
+<meta name="keywords" content="开发工具">
 <meta property="og:type" content="article">
-<meta property="og:title" content="常用JS方法">
-<meta property="og:url" content="https://jiabeih.cn/2018/09/06/常用JS方法/index.html">
+<meta property="og:title" content="IPTV页面及功能开发、移动端开发调试工具">
+<meta property="og:url" content="https://jiabeih.cn/2019/02/26/IPTV开发、移动端开发调试工具/index.html">
 <meta property="og:site_name" content="进步中的加贝H">
-<meta property="og:description" content="前言记录常用又背不过的JS方法！">
+<meta property="og:description" content="前言工欲善其事，必先利其器。这里记录了几个IPTV开发和移动端H5开发时的log工具，内容均为网上整合。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-26T08:42:25.230Z">
+<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/kaifa.png">
+<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode1.png?q-sign-algorithm=sha1&q-ak=AKIDpxw8FodbbOj2EtyVNtF95MT3uz6n5BKj&q-sign-time=1551148366;1551150166&q-key-time=1551148366;1551150166&q-header-list=&q-url-param-list=&q-signature=1bebc934ab2d04dfdd19ddad54663681cff4e24d&x-cos-security-token=df7144f148722a54a236d4c30434af6e7b2902c510001">
+<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode2.png?q-sign-algorithm=sha1&q-ak=AKIDKBqgt1s50h9jeypbJAkEeVCxMcdpoQaH&q-sign-time=1551148422;1551150222&q-key-time=1551148422;1551150222&q-header-list=&q-url-param-list=&q-signature=1783de11df896a87c75165d53dc34d3c1e478514&x-cos-security-token=cc8b96de2651ad24d4acd627f394e8153205c5fb10001">
+<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode3.png?q-sign-algorithm=sha1&q-ak=AKIDnjOxMsp9ytBRxnrefJ0cMSvUElxrTiJD&q-sign-time=1551148595;1551150395&q-key-time=1551148595;1551150395&q-header-list=&q-url-param-list=&q-signature=6b13278f81129875897fb74f37a91d5f3c69713c&x-cos-security-token=b4d1d65bdb204e87b8218ea13b7540de4d1befb810001">
+<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode4.png?q-sign-algorithm=sha1&q-ak=AKIDT6vtxLavjzIyzsMXkSzjzuJhZ2Qw7Qda&q-sign-time=1551148994;1551150794&q-key-time=1551148994;1551150794&q-header-list=&q-url-param-list=&q-signature=751458faaad9a62bdce08e87bd67eeecaaf3c687&x-cos-security-token=c1db914c63f5983a0fe26285dac55fd3e06abc3110001">
+<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/weinre1.png?q-sign-algorithm=sha1&q-ak=AKIDSKcIAFYnOKDHBfFJ2MVSESZmJYA7l2Ty&q-sign-time=1551150103;1551151903&q-key-time=1551150103;1551151903&q-header-list=&q-url-param-list=&q-signature=44f970cef74e36810754e4ffafd9b145fff45d78&x-cos-security-token=3509f3c7e804146ad1a7df16b11a453da1ef144010001">
+<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/weinre2.png?q-sign-algorithm=sha1&q-ak=AKIDcbAzGVBwL1j3z7N0i8pLSHMr9CubidVC&q-sign-time=1551150226;1551152026&q-key-time=1551150226;1551152026&q-header-list=&q-url-param-list=&q-signature=d617cc3e8629580b3c4e18a0a3498747aa1d6e85&x-cos-security-token=25ca46fc7b85846c963fb158c40c9ce818ced8da10001">
+<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/weinre3.png?q-sign-algorithm=sha1&q-ak=AKID4nmRHM29Iq2vll7lAg4BsdlbLDF6uTaM&q-sign-time=1551150203;1551152003&q-key-time=1551150203;1551152003&q-header-list=&q-url-param-list=&q-signature=1196ee496033c94080c23b6b8f1841c35d3deb0f&x-cos-security-token=3d1b4590bd52cb70426b6a54dbb498290057e6da10001">
+<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/weinre4.png?q-sign-algorithm=sha1&q-ak=AKIDMpXpJeCbHv4pMhW0s4daYIfGk5WQxS2G&q-sign-time=1551150184;1551151984&q-key-time=1551150184;1551151984&q-header-list=&q-url-param-list=&q-signature=436946d5cd1083209fa96c7e688d7758b35e85e4&x-cos-security-token=0e144e639e40b23f8292fbeec59fab36bf44d65c10001">
+<meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/weinre5.png?q-sign-algorithm=sha1&q-ak=AKIDT5sSFHAFc6afR7TaAKMYrYm3i7T9c84i&q-sign-time=1551150406;1551152206&q-key-time=1551150406;1551152206&q-header-list=&q-url-param-list=&q-signature=f839e50d1cf15230b5ff83e79704952cdb94871c&x-cos-security-token=e5b2f35b62901fd1d009fc943ec75938e0df6e6d10001">
+<meta property="og:updated_time" content="2019-02-26T03:16:08.635Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="常用JS方法">
-<meta name="twitter:description" content="前言记录常用又背不过的JS方法！">
+<meta name="twitter:title" content="IPTV页面及功能开发、移动端开发调试工具">
+<meta name="twitter:description" content="前言工欲善其事，必先利其器。这里记录了几个IPTV开发和移动端H5开发时的log工具，内容均为网上整合。">
+<meta name="twitter:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/kaifa.png">
 
 
 
@@ -149,13 +160,13 @@
 
 
 
-  <link rel="canonical" href="https://jiabeih.cn/2018/09/06/常用JS方法/"/>
+  <link rel="canonical" href="https://jiabeih.cn/2019/02/26/IPTV开发、移动端开发调试工具/"/>
 
 
 
 
 
-  <title>常用JS方法 | 进步中的加贝H</title>
+  <title>IPTV页面及功能开发、移动端开发调试工具 | 进步中的加贝H</title>
   
 
 
@@ -312,7 +323,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://jiabeih.cn/2018/09/06/常用JS方法/">
+    <link itemprop="mainEntityOfPage" href="https://jiabeih.cn/2019/02/26/IPTV开发、移动端开发调试工具/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="加贝H">
@@ -329,7 +340,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">常用JS方法</h1>
+          <h1 class="post-title" itemprop="name headline">IPTV页面及功能开发、移动端开发调试工具</h1>
         
 
         <div class="post-meta">
@@ -341,8 +352,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-06T11:03:18+08:00">
-                2018-09-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-26T09:55:22+08:00">
+                2019-02-26
               </time>
             
 
@@ -357,8 +368,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-10-26T16:42:25+08:00">
-                2018-10-26
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-26T11:16:08+08:00">
+                2019-02-26
               </time>
             
           </span>
@@ -376,8 +387,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JS常用方法记录/" itemprop="url" rel="index">
-                    <span itemprop="name">JS常用方法记录</span>
+                  <a href="/categories/开发工具/" itemprop="url" rel="index">
+                    <span itemprop="name">开发工具</span>
                   </a>
                 </span>
 
@@ -412,7 +423,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  665
+                  773
                 </span>
               
 
@@ -449,38 +460,78 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>记录常用又背不过的JS方法！</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>工欲善其事，必先利其器。这里记录了几个IPTV开发和移动端H5开发时的log工具，内容均为网上整合。</p>
 <a id="more"></a>
-<h2 id="禁止文字选中"><a href="#禁止文字选中" class="headerlink" title="禁止文字选中"></a>禁止文字选中</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">onselectstart</span>=<span class="string">"return false"</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="判断当前设备机型"><a href="#判断当前设备机型" class="headerlink" title="判断当前设备机型"></a>判断当前设备机型</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> browser=&#123;</span><br><span class="line">    versions:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> u = navigator.userAgent;</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">          trident: u.indexOf(<span class="string">'Trident'</span>) &gt; <span class="number">-1</span>, <span class="comment">//IE内核</span></span><br><span class="line">          presto: u.indexOf(<span class="string">'Presto'</span>) &gt; <span class="number">-1</span>, <span class="comment">//opera内核</span></span><br><span class="line">          webKit: u.indexOf(<span class="string">'AppleWebKit'</span>) &gt; <span class="number">-1</span>, <span class="comment">//苹果、谷歌内核</span></span><br><span class="line">          gecko: u.indexOf(<span class="string">'Gecko'</span>) &gt; <span class="number">-1</span> &amp;&amp; u.indexOf(<span class="string">'KHTML'</span>) == <span class="number">-1</span>,<span class="comment">//火狐内核</span></span><br><span class="line">          mobile: !!u.match(<span class="regexp">/AppleWebKit.*Mobile.*/</span>), <span class="comment">//是否为移动终端</span></span><br><span class="line">          ios: !!u.match(<span class="regexp">/\(i[^;]+;( U;)? CPU.+Mac OS X/</span>), <span class="comment">//ios终端</span></span><br><span class="line">          android: u.indexOf(<span class="string">'Android'</span>) &gt; <span class="number">-1</span> || u.indexOf(<span class="string">'Adr'</span>) &gt; <span class="number">-1</span>, <span class="comment">//android终端</span></span><br><span class="line">          iPhone: u.indexOf(<span class="string">'iPhone'</span>) &gt; <span class="number">-1</span> , <span class="comment">//是否为iPhone或者QQHD浏览器</span></span><br><span class="line">          iPad: u.indexOf(<span class="string">'iPad'</span>) &gt; <span class="number">-1</span>, <span class="comment">//是否iPad</span></span><br><span class="line">          Mac: u.indexOf(<span class="string">'Macintosh'</span>) &gt; <span class="number">-1</span>, <span class="comment">// 是否是Mac</span></span><br><span class="line">          webApp: u.indexOf(<span class="string">'Safari'</span>) == <span class="number">-1</span>, <span class="comment">//是否为Safari浏览器</span></span><br><span class="line">          weixin: u.indexOf(<span class="string">'MicroMessenger'</span>) &gt; <span class="number">-1</span>, <span class="comment">//是否微信</span></span><br><span class="line">          qq: !!u.match(<span class="regexp">/\sQQ|\sTIM/i</span>) <span class="comment">//是否QQ或TIM</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;()</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="document-readyState"><a href="#document-readyState" class="headerlink" title="document.readyState"></a>document.readyState</h2><p>描述了文档加载时的状态。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">document</span>.readyState === <span class="string">"XXX"</span>) &#123;</span><br><span class="line">        <span class="comment">// 执行方法</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>文档加载时会触发三个状态：</p>
+<p>我开发时的设备是Mac、iphone X。所以不记录Android的方法，以后用到再进行填充（主要买不起两个手机，只有自己的苹果手机供测试用）。</p>
+<h1 id="最方便的iOS设备真机调试"><a href="#最方便的iOS设备真机调试" class="headerlink" title="最方便的iOS设备真机调试"></a>最方便的iOS设备真机调试</h1><p>所需设备：</p>
+<blockquote>
+<p>电脑，我是Mac笔记本</p>
+<p>手机，iPhone</p>
+<p>数据线，苹果手机能用的就行</p>
+</blockquote>
 <ul>
-<li><p><strong>loading  / 加载</strong></p>
-<p><code>document</code>正在加载。</p>
+<li><p>首先在手机上打开一个开关，进入步骤为：<code>设置-&gt;safari 浏览器-&gt;高级-&gt;Web检查器</code>打开，然后<code>数据线连接到电脑</code>，手机<code>打开safari浏览器</code>，<code>访问需要调试的页面</code>。</p>
 </li>
-<li><p><strong>interactive  / 加载中</strong></p>
-<p>文档已经完成加载，文档已被解析，但是诸如图像，样式表和框架之类的子资源仍在加载。</p>
-</li>
-<li><p><strong>complete  / 加载完成</strong></p>
-<p>文档和所有子资源已完成加载。状态表示 <code>load</code>事件即将被触发。</p>
+<li><p>电脑打开safari浏览器，选择顶部的<code>开发</code>选项，选择<code>自己的手机</code>，然后选择<code>要调试的页面</code>。</p>
+<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/kaifa.png" alt=""></p>
 </li>
 </ul>
-<h2 id="字符串大小写转换"><a href="#字符串大小写转换" class="headerlink" title="字符串大小写转换"></a>字符串大小写转换</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">'qweSAQ xa SA 12 ADsf'</span>; <span class="comment">// 随机字符串</span></span><br><span class="line"><span class="built_in">console</span>.log(str.toLocaleUpperCase()); <span class="comment">// 将所有小写字母转换为大写字母</span></span><br><span class="line">  <span class="built_in">console</span>.log(str.toLocaleLowerCase()); <span class="comment">// 将所有大写字母转换为小写</span></span><br><span class="line">  <span class="built_in">console</span>.log(str.toLowerCase()); <span class="comment">// 将所有大写字母转换为小写</span></span><br><span class="line">  <span class="built_in">console</span>.log(str.toUpperCase()); <span class="comment">// 将所有小写字母转换为大写字母</span></span><br></pre></td></tr></table></figure>
-<h2 id="js刷新页面"><a href="#js刷新页面" class="headerlink" title="js刷新页面"></a>js刷新页面</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">location.reload()</span><br></pre></td></tr></table></figure>
-<h2 id="监听页面是否隐藏-最小化"><a href="#监听页面是否隐藏-最小化" class="headerlink" title="监听页面是否隐藏(最小化)"></a>监听页面是否隐藏(最小化)</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.visibilitychange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注意不要让手机屏幕黑屏，不然会影响调试。</p>
+<h1 id="iOS虚拟机调试-使用iOS-Simulator调试"><a href="#iOS虚拟机调试-使用iOS-Simulator调试" class="headerlink" title="iOS虚拟机调试-使用iOS Simulator调试"></a>iOS虚拟机调试-使用iOS Simulator调试</h1><p>需要工具:</p>
+<blockquote>
+<p>一台装有X Code的电脑</p>
+</blockquote>
 <ul>
-<li>document.hidden：表示页面是否隐藏的布尔值。页面隐藏包括 页面在后台标签页中 或者 浏览器最小化 （注意，页面被其他软件遮盖并不算隐藏，比如打开的 sublime 遮住了浏览器）。</li>
-<li>document.visibilityState：表示下面 4 个可能状态的值</li>
-<li>hidden：页面在后台标签页中或者浏览器最小化</li>
-<li>visible：页面在前台标签页中</li>
-<li>prerender：页面在屏幕外执行预渲染处理 document.hidden 的值为 true</li>
-<li>unloaded：页面正在从内存中卸载</li>
-<li>Visibilitychange事件：当文档从可见变为不可见或者从不可见变为可见时，会触发该事件。</li>
+<li><p>下载并打开X Code；</p>
+<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode1.png?q-sign-algorithm=sha1&amp;q-ak=AKIDpxw8FodbbOj2EtyVNtF95MT3uz6n5BKj&amp;q-sign-time=1551148366;1551150166&amp;q-key-time=1551148366;1551150166&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=1bebc934ab2d04dfdd19ddad54663681cff4e24d&amp;x-cos-security-token=df7144f148722a54a236d4c30434af6e7b2902c510001" alt=""></p>
+</li>
+<li><p>默认打开后会先显示一个iOS虚拟机，更换虚拟机型号可以由此进入；</p>
+<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode2.png?q-sign-algorithm=sha1&amp;q-ak=AKIDKBqgt1s50h9jeypbJAkEeVCxMcdpoQaH&amp;q-sign-time=1551148422;1551150222&amp;q-key-time=1551148422;1551150222&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=1783de11df896a87c75165d53dc34d3c1e478514&amp;x-cos-security-token=cc8b96de2651ad24d4acd627f394e8153205c5fb10001" alt=""></p>
+</li>
+<li><p>如果不小心打开的iOS虚拟机多了想关闭，点击这里；</p>
+<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode3.png?q-sign-algorithm=sha1&amp;q-ak=AKIDnjOxMsp9ytBRxnrefJ0cMSvUElxrTiJD&amp;q-sign-time=1551148595;1551150395&amp;q-key-time=1551148595;1551150395&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=6b13278f81129875897fb74f37a91d5f3c69713c&amp;x-cos-security-token=b4d1d65bdb204e87b8218ea13b7540de4d1befb810001" alt=""></p>
+</li>
+<li><p>进入iOS虚拟机后点开Safari浏览器，访问我们的项目页面，然后打开电脑上的Safari浏览器，通过选择<code>开发-&gt;模拟器-&gt;项目页面</code>即可看到熟悉的控制台界面；</p>
+<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/xcode4.png?q-sign-algorithm=sha1&amp;q-ak=AKIDT6vtxLavjzIyzsMXkSzjzuJhZ2Qw7Qda&amp;q-sign-time=1551148994;1551150794&amp;q-key-time=1551148994;1551150794&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=751458faaad9a62bdce08e87bd67eeecaaf3c687&amp;x-cos-security-token=c1db914c63f5983a0fe26285dac55fd3e06abc3110001" alt=""></p>
+</li>
 </ul>
-<p>栗🌰子：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 页面取消焦点时暂停定时器</span></span><br><span class="line"><span class="built_in">document</span>.addEventListener(<span class="string">'visibilitychange'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 兼容写法</span></span><br><span class="line">    <span class="keyword">var</span> isHidden = <span class="built_in">document</span>.hidden || <span class="built_in">document</span>.webkitHidden;</span><br><span class="line">    <span class="keyword">if</span>(isHidden) &#123;</span><br><span class="line">        <span class="comment">// 离开了页面</span></span><br><span class="line">		clearInterval(<span class="string">"定时器名称"</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">// 回到了页面</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
+<p>其中Simulator虚拟iOS系统的用法很简单，其中双指捏合的动作是按下alt键+触摸板下按移动就行了。</p>
+<p>这个的好处是可以测试不同版本的iOS系统。</p>
+<h1 id="使用Weinre调试"><a href="#使用Weinre调试" class="headerlink" title="使用Weinre调试"></a>使用Weinre调试</h1><p>这个IPTV开发与移动端开发都能使用，不过移动端开发时有上面两个更方便，这个方法我主要用在IPTV上。</p>
+<p>再次说明是Mac系统安装方法，win系统因为没法测试，所以不进行记录。不过只是命令行语法不同，道理大同小异。</p>
+<blockquote>
+<p>weinre基于nodeJs，电脑需要装有node.js（没有就安装一下）</p>
+</blockquote>
+<ul>
+<li><p>打开终端安装weinre，命令行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g weinre</span><br></pre></td></tr></table></figure>
+<p>执行结果：</p>
+<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/weinre1.png?q-sign-algorithm=sha1&amp;q-ak=AKIDSKcIAFYnOKDHBfFJ2MVSESZmJYA7l2Ty&amp;q-sign-time=1551150103;1551151903&amp;q-key-time=1551150103;1551151903&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=44f970cef74e36810754e4ffafd9b145fff45d78&amp;x-cos-security-token=3509f3c7e804146ad1a7df16b11a453da1ef144010001" alt=""></p>
+</li>
+<li><p>安装完成后检查版本，命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">weinre -v</span><br></pre></td></tr></table></figure>
+<p>执行结果：</p>
+<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/weinre2.png?q-sign-algorithm=sha1&amp;q-ak=AKIDcbAzGVBwL1j3z7N0i8pLSHMr9CubidVC&amp;q-sign-time=1551150226;1551152026&amp;q-key-time=1551150226;1551152026&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=d617cc3e8629580b3c4e18a0a3498747aa1d6e85&amp;x-cos-security-token=25ca46fc7b85846c963fb158c40c9ce818ced8da10001" alt=""></p>
+</li>
+<li><p>查看本机IP，命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ipconfig getifaddr en0</span><br></pre></td></tr></table></figure>
+<p>执行结果：</p>
+<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/weinre3.png?q-sign-algorithm=sha1&amp;q-ak=AKID4nmRHM29Iq2vll7lAg4BsdlbLDF6uTaM&amp;q-sign-time=1551150203;1551152003&amp;q-key-time=1551150203;1551152003&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=1196ee496033c94080c23b6b8f1841c35d3deb0f&amp;x-cos-security-token=3d1b4590bd52cb70426b6a54dbb498290057e6da10001" alt=""></p>
+</li>
+<li><p>复制上一步的IP，开启服务，命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">weinre -boundHost 169.254.128.84</span><br></pre></td></tr></table></figure>
+<p>执行结果：</p>
+<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/weinre4.png?q-sign-algorithm=sha1&amp;q-ak=AKIDMpXpJeCbHv4pMhW0s4daYIfGk5WQxS2G&amp;q-sign-time=1551150184;1551151984&amp;q-key-time=1551150184;1551151984&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=436946d5cd1083209fa96c7e688d7758b35e85e4&amp;x-cos-security-token=0e144e639e40b23f8292fbeec59fab36bf44d65c10001" alt=""></p>
+</li>
+<li><p>浏览器中打开终端中输入完最后一条命令给出的链接；</p>
+</li>
+<li><p>将下面红框第一步的script标签复制粘贴到自己的页面（顺序前后无所谓），然后点击红框第二步debug页面；</p>
+<p><img src="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/IPTV%E9%A1%B5%E9%9D%A2%E5%8F%8A%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E3%80%81%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/weinre5.png?q-sign-algorithm=sha1&amp;q-ak=AKIDT5sSFHAFc6afR7TaAKMYrYm3i7T9c84i&amp;q-sign-time=1551150406;1551152206&amp;q-key-time=1551150406;1551152206&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=f839e50d1cf15230b5ff83e79704952cdb94871c&amp;x-cos-security-token=e5b2f35b62901fd1d009fc943ec75938e0df6e6d10001" alt=""></p>
+</li>
+<li><p>将代码更新后在IPTV盒子上打开项目页面或移动端设备打开项目页面，然后看电脑的weinre页面的<strong>Targets</strong>下面会显示出来我们的页面，点击进入即可看到熟悉的味道；</p>
+</li>
+</ul>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>用了半天时间鼓捣这些东西，以后开发时应该速度会更快！</p>
 
       
       <div>
@@ -505,12 +556,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/09/06/常用JS方法/">常用JS方法</a></p>
+  <p><span>本文标题:</span><a href="/2019/02/26/IPTV开发、移动端开发调试工具/">IPTV页面及功能开发、移动端开发调试工具</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 加贝H 的个人博客">加贝H</a></p>
-  <!-- <p><span>发布时间:</span>2018年09月06日 - 11:09</p>
-  <p><span>最后更新:</span>2018年10月26日 - 16:10</p> -->
-  <p><span>原始链接:</span><a href="/2018/09/06/常用JS方法/" title="常用JS方法">https://jiabeih.cn/2018/09/06/常用JS方法/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://jiabeih.cn/2018/09/06/常用JS方法/"  aria-label="复制成功！"></i></span>
+  <!-- <p><span>发布时间:</span>2019年02月26日 - 09:02</p>
+  <p><span>最后更新:</span>2019年02月26日 - 11:02</p> -->
+  <p><span>原始链接:</span><a href="/2019/02/26/IPTV开发、移动端开发调试工具/" title="IPTV页面及功能开发、移动端开发调试工具">https://jiabeih.cn/2019/02/26/IPTV开发、移动端开发调试工具/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://jiabeih.cn/2019/02/26/IPTV开发、移动端开发调试工具/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -540,7 +591,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/JavaScript/" rel="tag"><i class="fa fa-tag"></i> JavaScript</a>
+            <a href="/tags/开发工具/" rel="tag"><i class="fa fa-tag"></i> 开发工具</a>
           
         </div>
       
@@ -553,8 +604,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/05/常用css属性/" rel="next" title="常用css属性">
-                <i class="fa fa-chevron-left"></i> 常用css属性
+              <a href="/2019/01/16/html空格字符及其他字符/" rel="next" title="html空格字符及其他字符(转)">
+                <i class="fa fa-chevron-left"></i> html空格字符及其他字符(转)
               </a>
             
           </div>
@@ -562,10 +613,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/13/IPTV获取焦点后文字滚动代码/" rel="prev" title="IPTV获取焦点后文字滚动代码(跑马灯)">
-                IPTV获取焦点后文字滚动代码(跑马灯) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -729,7 +776,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#禁止文字选中"><span class="nav-number">2.</span> <span class="nav-text">禁止文字选中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#判断当前设备机型"><span class="nav-number">3.</span> <span class="nav-text">判断当前设备机型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#document-readyState"><span class="nav-number">4.</span> <span class="nav-text">document.readyState</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串大小写转换"><span class="nav-number">5.</span> <span class="nav-text">字符串大小写转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#js刷新页面"><span class="nav-number">6.</span> <span class="nav-text">js刷新页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#监听页面是否隐藏-最小化"><span class="nav-number">7.</span> <span class="nav-text">监听页面是否隐藏(最小化)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#最方便的iOS设备真机调试"><span class="nav-number">2.</span> <span class="nav-text">最方便的iOS设备真机调试</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#iOS虚拟机调试-使用iOS-Simulator调试"><span class="nav-number">3.</span> <span class="nav-text">iOS虚拟机调试-使用iOS Simulator调试</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用Weinre调试"><span class="nav-number">4.</span> <span class="nav-text">使用Weinre调试</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
