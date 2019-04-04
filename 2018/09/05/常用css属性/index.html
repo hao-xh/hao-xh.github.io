@@ -117,7 +117,7 @@
 <meta property="og:description" content="前言记录常用又背不过的CSS属性！">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://blog-img-1257363100.cos.ap-beijing.myqcloud.com/CSS%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7%E8%AE%B0%E5%BD%95/format.png?q-sign-algorithm=sha1&q-ak=AKID6rbDVlpPrdKIV9Rp8pjP2HF676Pl5hFa&q-sign-time=1547609925;1547611725&q-key-time=1547609925;1547611725&q-header-list=&q-url-param-list=&q-signature=badef8ab8ab83aa13cbd635573a0e65213c977ed&x-cos-security-token=271fb75e6622a8c3e129a9a8210e685fe44a8ad110001">
-<meta property="og:updated_time" content="2019-01-16T03:39:59.523Z">
+<meta property="og:updated_time" content="2019-03-18T02:47:56.359Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常用css属性">
 <meta name="twitter:description" content="前言记录常用又背不过的CSS属性！">
@@ -168,7 +168,7 @@
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?f2c0b6f0fcafbf7a9147ab3c95a28172";
+      hm.src = "https://hm.baidu.com/hm.js?df7fccc17b572585b263ddfaea17dd37";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
@@ -359,8 +359,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-01-16T11:39:59+08:00">
-                2019-01-16
+              <time title="更新于" itemprop="dateModified" datetime="2019-03-18T10:47:56+08:00">
+                2019-03-18
               </time>
             
           </span>
@@ -414,7 +414,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  625
+                  732
                 </span>
               
 
@@ -510,6 +510,9 @@
 <p>.svg字体是基于SVG字体渲染的一种格式,支持这种字体的浏览器有【Chrome4+, Safari3.1+, Opera10.0+, iOS Mobile Safari3.2+】。</p>
 <p>其中兼容写法：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">font-face</span> &#123;  	</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">'YourWebFontName'</span>;  	</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'YourWebFontName.eot'</span>); <span class="comment">/* IE9 Compat Modes */</span>  	</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'YourWebFontName.eot?#iefix'</span>) <span class="built_in">format</span>(<span class="string">'embedded-opentype'</span>), <span class="comment">/* IE6-IE8 */</span>               </span><br><span class="line">         <span class="built_in">url</span>(<span class="string">'YourWebFontName.woff'</span>) <span class="built_in">format</span>(<span class="string">'woff'</span>), <span class="comment">/* Modern Browsers */</span>               </span><br><span class="line">         <span class="built_in">url</span>(<span class="string">'YourWebFontName.ttf'</span>)  <span class="built_in">format</span>(<span class="string">'truetype'</span>), <span class="comment">/* Safari, Android, iOS */</span>               </span><br><span class="line">         <span class="built_in">url</span>(<span class="string">'YourWebFontName.svg#YourWebFontName'</span>) <span class="built_in">format</span>(<span class="string">'svg'</span>); <span class="comment">/* Legacy iOS */</span>     </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="针对不同浏览器内核，HTML辨别方法"><a href="#针对不同浏览器内核，HTML辨别方法" class="headerlink" title="针对不同浏览器内核，HTML辨别方法"></a>针对不同浏览器内核，HTML辨别方法</h2><p>IE浏览器：<code>&lt;!--[if IE]&gt;&lt;![endif]--&gt;</code></p>
+<p>非IE浏览器：<code>&lt;!--[if !IE]&gt;&lt;![endif]--&gt;</code></p>
+<h2 id="针对不同浏览器内核，CSS辨别方法"><a href="#针对不同浏览器内核，CSS辨别方法" class="headerlink" title="针对不同浏览器内核，CSS辨别方法"></a>针对不同浏览器内核，CSS辨别方法</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 设置文字不可选取 */</span></span><br><span class="line">* &#123;</span><br><span class="line">  <span class="attribute">-moz-user-select</span>: none; <span class="comment">/* 火狐 浏览器 */</span></span><br><span class="line">  <span class="attribute">-webkit-user-select</span>: none; <span class="comment">/* Webkit 浏览器 */</span></span><br><span class="line">  <span class="attribute">-o-user-select</span>: none; <span class="comment">/* Opera 浏览器 */</span></span><br><span class="line">  <span class="attribute">-ms-user-select</span>: none; <span class="comment">/* IE10 浏览器 */</span></span><br><span class="line">  <span class="attribute">-khtml-user-select</span>: none; <span class="comment">/* 早期浏览器 */</span></span><br><span class="line">  <span class="attribute">user-select</span>: none; <span class="comment">/* 默认 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
       <div>
@@ -537,7 +540,7 @@
   <p><span>本文标题:</span><a href="/2018/09/05/常用css属性/">常用css属性</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 加贝H 的个人博客">加贝H</a></p>
   <!-- <p><span>发布时间:</span>2018年09月05日 - 14:09</p>
-  <p><span>最后更新:</span>2019年01月16日 - 11:01</p> -->
+  <p><span>最后更新:</span>2019年03月18日 - 10:03</p> -->
   <p><span>原始链接:</span><a href="/2018/09/05/常用css属性/" title="常用css属性">https://jiabeih.cn/2018/09/05/常用css属性/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://jiabeih.cn/2018/09/05/常用css属性/"  aria-label="复制成功！"></i></span>
   </p>
@@ -758,7 +761,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调整字体间距"><span class="nav-number">2.</span> <span class="nav-text">调整字体间距</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#阻止点击、状态变化和鼠标指针变化"><span class="nav-number">3.</span> <span class="nav-text">阻止点击、状态变化和鼠标指针变化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#移动端-Android、IOS-点击元素时的灰色背景"><span class="nav-number">4.</span> <span class="nav-text">移动端(Android、IOS)点击元素时的灰色背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引入外部字体"><span class="nav-number">5.</span> <span class="nav-text">引入外部字体</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用法"><span class="nav-number">5.1.</span> <span class="nav-text">用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#format类型："><span class="nav-number">5.2.</span> <span class="nav-text">format类型：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性："><span class="nav-number">5.3.</span> <span class="nav-text">兼容性：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调整字体间距"><span class="nav-number">2.</span> <span class="nav-text">调整字体间距</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#阻止点击、状态变化和鼠标指针变化"><span class="nav-number">3.</span> <span class="nav-text">阻止点击、状态变化和鼠标指针变化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#移动端-Android、IOS-点击元素时的灰色背景"><span class="nav-number">4.</span> <span class="nav-text">移动端(Android、IOS)点击元素时的灰色背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引入外部字体"><span class="nav-number">5.</span> <span class="nav-text">引入外部字体</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用法"><span class="nav-number">5.1.</span> <span class="nav-text">用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#format类型："><span class="nav-number">5.2.</span> <span class="nav-text">format类型：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容性："><span class="nav-number">5.3.</span> <span class="nav-text">兼容性：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#针对不同浏览器内核，HTML辨别方法"><span class="nav-number">6.</span> <span class="nav-text">针对不同浏览器内核，HTML辨别方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#针对不同浏览器内核，CSS辨别方法"><span class="nav-number">7.</span> <span class="nav-text">针对不同浏览器内核，CSS辨别方法</span></a></li></ol></div>
             
 
           </div>
@@ -830,7 +833,7 @@
       
         <span class="post-meta-item-text">博客全站共&#58;</span>
       
-      <span title="博客全站共">15.4k字</span>
+      <span title="博客全站共">15.5k字</span>
     </span>
   
 
